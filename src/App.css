@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+#root, html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background-color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  --white: rgb(230, 230, 230);
+  --text-black: rgb(10,10,10);
+}
+
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(7, 0, 143) 0%, rgb(12, 12, 189) 35%, rgba(0,212,255,1) 100%);
+  margin: 30vh 22vw;
+  padding: 2em;
+  border-radius: 2em;
+}
+
+header h2, header p {
+  color: white;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: 4em;
+  font-family: "Play", 'Arial', sans-serif;
+  font-weight: bold;
+  color:var(--text-black);
+  margin: 0.5em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h1 {
+  text-align: center;
+  width: 100%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p {
+  color: var(--text-black);
+  font-size: 1em;
+  font-family: "Play";
 }
 
-.card {
-  padding: 2em;
+@font-face {
+  font-family: "Mate";
+  src: url(./assets/fonts/Mate/Mate-Regular.ttf);
 }
 
-.read-the-docs {
-  color: #888;
+@font-face {
+  font-family: "Play";
+  src: url(./assets/fonts/Play/Play-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Play";
+  src: url(./assets/fonts/Play/Play-Bold.ttf);
+  font-weight: bold;
 }
