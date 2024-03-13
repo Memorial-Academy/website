@@ -1,14 +1,16 @@
 nav {
     width: 99%;
     margin:0;
-    padding: 0.5% 1%;
+    /* padding: 0.5% 1%; */
+    padding: 0.6rem 1.4rem;
     background-color: var(--white);
     display:grid;
     grid-template-columns: 19.5% 79.5%;
-    height: 8em;
+    height: 8rem;
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 999;
 }
 
 nav h1 {

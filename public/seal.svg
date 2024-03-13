@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
     <style>
         text.sealText {
-            font-family: serif;
+            font-family: "Mate", "Times New Roman", serif;
             font-size: 16px;
             letter-spacing: 3px;
             word-spacing: 6px;
