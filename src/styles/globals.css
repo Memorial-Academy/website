@@ -15,6 +15,18 @@ p {
     font-family: "Play";
 }
 
+main {
+    margin: 4rem 27vw;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Play";
+    font-size: 2.2rem;
+    color:var(--text-black);
+}
+
 @font-face {
     font-family: "Mate";
     src: url(../assets/fonts/Mate/Mate-Regular.ttf);
@@ -29,4 +41,14 @@ p {
     font-family: "Play";
     src: url(../assets/fonts/Play/Play-Bold.ttf);
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Kode Mono";
+    src: url(../assets/fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Architects Daughter";
+    src: url(../assets/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
 }

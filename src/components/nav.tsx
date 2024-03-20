@@ -12,7 +12,9 @@ export default function Nav() {
                 <span>|</span>
                 <a href="/stemventure" className="program-link">STEMventure</a>
                 <span>|</span>
-                <a href="/volunteer">Volunteer</a>
+                {/* <a href="/volunteer">Volunteer</a>
+                <span>|</span> */}
+                <a href="/donate">Donate</a>
                 <span>|</span>
                 <a href="/about">About</a>
             </div>
