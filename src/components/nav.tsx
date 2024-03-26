@@ -10,7 +10,7 @@ export default function Nav() {
             <div id="nav-right">
                 <a href="/letscode" className="program-link">Let's Code</a>
                 <span>|</span>
-                <a href="/stemventure" className="program-link">STEMventure</a>
+                <a href="/stempark" className="program-link">STEMpark</a>
                 <span>|</span>
                 {/* <a href="/volunteer">Volunteer</a>
                 <span>|</span> */}

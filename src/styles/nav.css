@@ -59,3 +59,9 @@ nav img {
 #nav-right .program-link {
     font-weight: bold;
 }
+
+@media screen and (max-width:2000px) {
+    nav {
+        grid-template-columns: 29.5% 69.5%;
+    }
+}

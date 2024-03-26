@@ -7,6 +7,8 @@
     height: 100vh;
     --white: rgb(230, 230, 230);
     --text-black: rgb(10, 10, 10);
+    --lets-code-gradient: linear-gradient(135deg, #ffcc35 0%, #f99000 45%, #ff611f 98%);
+    --stem-venture-gradient: linear-gradient(135deg, #8cff35 0%, #19e449 45%, #09830b 98%);
 }
 
 p {
@@ -19,12 +21,17 @@ main {
     margin: 4rem 27vw;
 }
 
-h3 {
+h3, h4 {
     text-align: center;
     font-weight: bold;
     font-family: "Play";
     font-size: 2.2rem;
     color:var(--text-black);
+}
+
+h4 {
+    margin:0.8em;
+    font-size: 1.8rem;
 }
 
 @font-face {
@@ -51,4 +58,13 @@ h3 {
 @font-face {
     font-family: "Architects Daughter";
     src: url(../assets/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+
+@media screen and (max-width:2000px) {
+    #root, html, body {
+        font-size: 16px;
+    }
+    main {
+        margin: 4rem 22vw;
+    }
 }
