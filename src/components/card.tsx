@@ -1,38 +1,45 @@
+"use client";
 import "../styles/card.css";
+import React from "react";
 
-var count = 0;
+type CardParams = {
+    children: React.ReactNode, 
+    image: string,
+    header: string
+}
 
-export default function Card({children, image, header}: {children: React.ReactNode, image: string, header: string}) {
-    count++;
-
-    if (count % 2 == 0) {
+const Card = {
+    Left: ({children, image, header}: CardParams) => {
+        var imageComponents = image.split(" || ");
         return (
-            <section className="card-left">
+            <div className="card card-left">
                 <div className="card-image">
-                    <img src={image} alt={image + ": " + header} />
+                    <img src={imageComponents[0]} alt={imageComponents[1]} />
                 </div>
                 <div className="card-border" role="separator"></div>
                 <div>
                     <h4>{header}</h4>
                     {children}
                 </div>
-            </section>
+            </div>
         )
-    } else {
+    }, Right: ({children, image, header}: CardParams) => {
+        var imageComponents = image.split(" || ");
         return (
-            <section className="card-right">
+            <div className="card card-right">
                 <div>
                     <h4>{header}</h4>
                     {children}
                 </div>
                 <div className="card-border" role="separator"></div>
                 <div className="card-image">
-                    <img src={image} alt={image + ": " + header} />
+                    <img src={imageComponents[0]} alt={imageComponents[1]} />
                 </div>
-            </section>
+            </div>
         )
     }
 }
+export default Card;
 
 export function LearnMore({link}: {link: string}) {
     return (

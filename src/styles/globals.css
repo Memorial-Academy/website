@@ -11,7 +11,7 @@
     --stem-venture-gradient: linear-gradient(135deg, #8cff35 0%, #19e449 45%, #09830b 98%);
 }
 
-p {
+p, li {
     color: var(--text-black);
     font-size: 1em;
     font-family: "Play";

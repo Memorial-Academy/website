@@ -12,7 +12,7 @@ export default function Page() {
             <Header
                 title="Let's Code"
                 tagline="Computer science summer camp with real world tools and skills for grades 5-8"
-                background="linear-gradient(135deg, #ffcc35 0%, #f99000 45%, #ff611f 98%)"
+                background="var(--lets-code-gradient)"
                 font="Kode Mono"
             />
             <main>
