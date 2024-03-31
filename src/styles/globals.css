@@ -21,6 +21,15 @@ main {
     margin: 4rem 27vw;
 }
 
+h2 {
+    font-size: 4.5rem;
+    font-family: "Play", 'Arial', sans-serif;
+    font-weight: bold;
+    color: var(--text-black);
+    margin: 0.5em;
+    text-align: center;
+}
+
 h3, h4 {
     text-align: center;
     font-weight: bold;

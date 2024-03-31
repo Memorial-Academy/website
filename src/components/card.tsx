@@ -1,4 +1,3 @@
-"use client";
 import "../styles/card.css";
 import React from "react";
 
@@ -35,6 +34,14 @@ const Card = {
                 <div className="card-image">
                     <img src={imageComponents[0]} alt={imageComponents[1]} />
                 </div>
+            </div>
+        )
+    }, Norm: ({children, header}: {children: React.ReactNode, header: string}) => {
+        return (
+            <div className="card">
+                <h4>{header}</h4>
+                {children}
+                {/* <hr/> */}
             </div>
         )
     }
