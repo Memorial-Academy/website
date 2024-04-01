@@ -1,6 +1,7 @@
 div.card {
     width: 100%;
-    gap: 1%
+    gap: 1%;
+    margin-bottom: 2vw;
 }
 
 div.card.card-left {
@@ -13,8 +14,9 @@ div.card.card-right {
     grid-template-columns: 58.5% 1% 40.5%;
 }
 
-div.card {
-    margin-bottom: 2vw;
+div.card.card-half {
+    display: grid;
+    grid-template-columns: 49.5% 1% 49.5%;
 }
 
 div.card div {

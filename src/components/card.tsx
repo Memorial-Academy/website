@@ -44,6 +44,16 @@ const Card = {
                 {/* <hr/> */}
             </div>
         )
+    }, Half: ({left, right}: {left: React.ReactNode, right: React.ReactNode}) => {
+        return (
+            <div className="card card-half">
+                <div>{left}</div>
+                <div className="card-border" role="separator"></div>
+                <div>{right}</div>
+            </div>
+        )
+    }, Image: ({src, alt}: {src: string, alt: string}) => {
+        return <img className="card-image" src={src} alt={alt} />
     }
 }
 export default Card;
