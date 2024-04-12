@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh;
     --white: rgb(230, 230, 230);
+    --gray: rgb(215, 215, 215);
     --text-black: rgb(10, 10, 10);
     --sea-blue-gradient: linear-gradient(135deg, rgb(7, 0, 143) 0%, rgb(12, 12, 189) 35%, rgba(0,212,255,1) 100%);
     --lets-code-gradient: linear-gradient(135deg, #ffcc35 0%, #f99000 45%, #ff611f 98%);
@@ -16,6 +17,15 @@ p, li {
     color: var(--text-black);
     font-size: 1em;
     font-family: "Play";
+}
+
+a, a:visited {
+    color: rgb(37, 95, 223);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(61, 140, 243);
 }
 
 main {
@@ -89,6 +99,7 @@ img.card-image {
         font-size: 16px;
     }
     main {
-        margin: 4rem 22vw;
+        margin: 0rem 20vw;
+        padding: 4rem 2vw;
     }
 }

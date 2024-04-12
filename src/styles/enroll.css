@@ -1,4 +1,4 @@
-.enroll-button {
+a.enroll-button {
     display: block;
     font-family: "Play", 'Arial', sans-serif;
     font-weight: bold;
@@ -12,14 +12,27 @@
     border-radius: 4rem;
 }
 
-.enroll-button-wrapper {
-    font-size: 3.2rem;
+.enroll-button-container {
+    font-size: 3rem;
     background: var(--sea-blue-gradient);
-    width: 55%;
-    margin: 4rem 22.5%;
+    max-width: 55vw;
     border-radius: 4rem;
+    padding: 0;
+}
+
+.enroll-button-wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh 5%;
 }
 
 .enroll-button:hover {
     background-color: rgba(202, 202, 202, 0.2);
+}
+
+@media screen and (max-width: 2000px) {
+    .enroll-button-container {
+        font-size: 2.4rem;
+    }
 }

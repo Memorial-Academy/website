@@ -19,7 +19,7 @@ div.card.card-half {
     grid-template-columns: 49.5% 1% 49.5%;
 }
 
-div.card div {
+div.card div:not([class]) {
     padding:3%;
 }
 

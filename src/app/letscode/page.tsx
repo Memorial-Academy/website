@@ -9,7 +9,8 @@ export const metadata: Metadata = {
     description: "Computer Science summer camp for fifth through eigth graders."
 }
 
-const EnrollButton = <Enroll text="Enroll!" link="" />
+const IntroEnrollButton = <Enroll text="Enroll in Introductory Classes" link="https://cloud.memorialacademy.org/apps/forms/s/SBXyemr9kjGEtg7WLBwtF8aj" />
+const AdvEnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
 
 export default function Page() {
     return (
@@ -43,7 +44,6 @@ export default function Page() {
                         <li><b>Cost:</b> Free</li>
                     </ul>
                 </Card.Left>
-                {EnrollButton}
                 <Section heading='Classes'>
                     <Card.Half left={
                         <>
@@ -61,6 +61,8 @@ export default function Page() {
                                 <li>Introduction to Game Development with Scratch</li>
                                 <li>Introduction to Web Development</li>
                             </ul>
+                            {/* <p><b><a href="">Enroll in Introductory Classes</a></b></p> */}
+                            {IntroEnrollButton}
                         </>
                     } right={
                         <>
@@ -80,7 +82,8 @@ export default function Page() {
                                 <br/>
                                 Absolutely! We scheduled Let's Code to ensure that students can take an introductory class during week one (June 3 - 7) and then take an advanced class for the remaining two weeks (June 10 - 14 & June 17 - 21).
                             </p>
-
+                            {/* <p><b><a href="">Enroll in Advanced Classes</a></b></p> */}
+                            {AdvEnrollButton}
                         </>
                     } />
                     <Card.Norm header='Introduction to Python'>
@@ -123,7 +126,8 @@ export default function Page() {
                     </Card.Norm>
                 </Section>
                <Section heading='Sign up today!'>
-                   {EnrollButton}
+                   {IntroEnrollButton}
+                   {AdvEnrollButton}
                    <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a></p>
                </Section>
             </main>
