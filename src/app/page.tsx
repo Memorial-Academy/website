@@ -16,7 +16,17 @@ export default function Home() {
                 font=""
             />
             <main>
-                <Section heading="Empowering Young Minds"><></></Section>
+                <Section heading="Empowering Young Minds">
+                    <>
+                        <p>The Memorial Academy of Science and Technology (MAST) was founded to provide students of all background, especially those from low-income/low-opportunity programs, to gain access to high quality learning experiences. We pride ourselves in offering programs developed by passionate students, highly experienced in their respective fields, that are designed with three goals in mind:</p>
+                        <ol>
+                            <li><b>Use real world tools/lessons.</b> Most summer camps use proprietary tools. While these can be useful, these skills are difficult to expand on. All of our programs use tools accessible from home, allowing students to continue learning and experimenting after leaving MAST!</li>
+                            <li><b>No-cost or low-cost programs.</b> We believe access to high-quality education and learning opportunities is a right; a person's economic background should not limit their ability to learn and grow! For that reason, we strive to ensure all of our programs are either free, or have a minimal cost.</li>
+                            <li><b>Combine instructor-led demonstrations with student-led learning.</b> Instructors should act as catylists in a student's learning experience. Our programs begin with short lessons packed with interactive demonstrations, led by our passionate & experience instructors, to give students a foundation to build upon. Then, we switch to student-led activities, where students will have to use their creativity and knowledge (with the supports of our volunteers and instructors) to apply their and grow their skills.</li>
+                        </ol>
+                        <p>MAST's programs allow students to unlock new skills and explore new career paths in an environment especially designed to ensure success and foster creativity and learning. All are welcome to enroll!</p>
+                    </>
+                </Section>
                 <Section heading="Programs">
                     <Card.Left image="./lets_code.svg" header="Let's Code">
                         <p><b>Grades 5-8</b></p>
@@ -27,6 +37,7 @@ export default function Home() {
                     <Card.Left image="./stemventure.svg" header="STEMpark">
                         <p><b>Grades 3-12; parents welcome!</b></p>
                         <p><b>Cost: Free (No enrollment required*)</b></p>
+                        <p>Registration opens April 17.</p>
                         <p>The best way to learn is through shared experiences! Come to the park and join us for fun, detailed, easy-to-understand demonstrations of various STEM topics. Afterwards, students will break off into groups to participate in self-guided activites to solve a problem related to the day's topic.</p>
                         <p>*enrollment required to participate in interactive/hands-on activities</p>
                         <LearnMore link="/stempark" />
