@@ -12,15 +12,21 @@ header h2, header p {
     text-align: center;
 }
 
-header h1 {
+/* header h1 {
     text-align: center;
     width: 100%;
 
-}
+} */
 
 header div {
     padding: 12vw 10vw;
     width: 80vw;
     height:100%;
     background-color: rgba(40,40,40,0.25);
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        margin-top: 6.2rem;
+    }
 }

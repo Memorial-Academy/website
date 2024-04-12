@@ -35,3 +35,16 @@ div.card div.card-image {
     justify-content: center;
     align-items: center;
 }
+
+.card-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    div.card.card-right {
+        grid-template-columns: 64.7% 0.6% 34.7%;
+    }
+    div.card.card-left {
+        grid-template-columns: 34.7% 0.6% 64.7%;
+    }
+}

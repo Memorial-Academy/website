@@ -2,7 +2,8 @@ nav {
     width: 99%;
     margin:0;
     /* padding: 0.5% 1%; */
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 1%;
+    /* padding: 0.6rem 1.4rem; */
     background-color: var(--white);
     display:grid;
     grid-template-columns: 19.5% 79.5%;
@@ -21,6 +22,7 @@ nav h1 {
 
 nav img {
     width: 22%;
+    max-height: 8rem;
 }
 
 #nav-left, #nav-right {
@@ -60,8 +62,26 @@ nav img {
     font-weight: bold;
 }
 
-@media screen and (max-width:2000px) {
+@media screen and (max-width:2000px) and (min-width:1550px) {
     nav {
         grid-template-columns: 29.5% 69.5%;
+    }
+}
+@media screen and (max-width: 1550px) and (min-width: 770px) {
+    nav {
+        grid-template-columns: 49.5% 49.5%;
+    }
+}
+@media screen and (max-width: 770px) {
+    nav {
+        grid-template-columns: 19.5% 79.5%;
+        height: 5rem;
+    }
+    nav h1 {
+        display: none;
+    }
+    nav img {
+        width: 100%;
+        max-height: 5rem;
     }
 }
