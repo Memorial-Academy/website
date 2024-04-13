@@ -31,8 +31,26 @@ a.enroll-button {
     background-color: rgba(202, 202, 202, 0.2);
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2000px) and (min-width: 900px) {
     .enroll-button-container {
         font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+    .enroll-button-container {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .enroll-button-container {
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .enroll-button-container {
+        font-size: 1.4rem;
     }
 }

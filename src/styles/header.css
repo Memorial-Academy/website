@@ -12,12 +12,6 @@ header h2, header p {
     text-align: center;
 }
 
-/* header h1 {
-    text-align: center;
-    width: 100%;
-
-} */
-
 header div {
     padding: 12vw 10vw;
     width: 80vw;
@@ -28,5 +22,9 @@ header div {
 @media screen and (max-width: 770px) {
     header {
         margin-top: 6.2rem;
+    }
+    header div {
+        padding: 20vw 7vw;
+        width: 86vw;
     }
 }

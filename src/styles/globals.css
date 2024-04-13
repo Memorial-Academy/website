@@ -46,6 +46,7 @@ h3, h4 {
     font-weight: bold;
     font-family: "Play";
     font-size: 2.3rem;
+    margin: 1em 0;
     color:var(--text-black);
 }
 
@@ -104,7 +105,7 @@ img.card-image {
     }
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1550px) and (min-width:1000px) {
     #root, html, body {
         font-size: 15px;
     }
@@ -114,7 +115,7 @@ img.card-image {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 800px) {
     #root, html, body {
         font-size: 14.5px;
     }
@@ -124,5 +125,28 @@ img.card-image {
     main {
         margin: 0rem 6vw;
         padding: 2.5rem 0.4vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #root, html, body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 3.3rem;
+    }
+    main {
+        margin: 0rem 2vw;
+        padding: 2.5rem 0.2vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    h3 {
+        font-size: 2rem;
+        margin: 0.8em 0;
+    }
+    h4 {
+        font-size: 1.5rem;
+        margin: 0.5em;
     }
 }
