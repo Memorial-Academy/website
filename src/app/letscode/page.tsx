@@ -46,8 +46,8 @@ export default function Page() {
                         <li>
                             <b>Times:</b>
                             <ul>
-                                <li>Monday - Thursday: 9:00a.m - 3:30p.m</li>
-                                <li>Friday: 9:00a.m - 10:30a.m</li>
+                                <li>Monday - Thursday: 10:00a.m - 3:00p.m</li>
+                                <li>Friday: 10:00a.m - 11:30a.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Virtual</li>
@@ -72,7 +72,6 @@ export default function Page() {
                                 <li>Introduction to Game Development with Scratch</li>
                                 <li>Introduction to Web Development</li>
                             </ul>
-                            {/* <p><b><a href="">Enroll in Introductory Classes</a></b></p> */}
                             {IntroEnrollButton}
                         </>
                     } right={
@@ -93,7 +92,6 @@ export default function Page() {
                                 <br/>
                                 Absolutely! We scheduled Let's Code to ensure that students can take an introductory class during week one (June 3 - 7) and then take an advanced class for the remaining two weeks (June 10 - 14 & June 17 - 21).
                             </p>
-                            {/* <p><b><a href="">Enroll in Advanced Classes</a></b></p> */}
                             {AdvEnrollButton}
                         </>
                     } />
@@ -126,10 +124,11 @@ export default function Page() {
                 <Section heading="The Let's Code Experience">
                     <Card.Image src="/lets_code_img/whiteboard1.jpg" alt={"\"Let's Code\" written on a whiteboard"}/>
                     <Card.Norm header='A Normal Day'>
-                        <h5>Morning Activities (9:00a.m - 12:00p.m)</h5>
+                        <h5>Morning Activities (10:00a.m - 12:00p.m)</h5>
                         <p>Students arrive and start the day with a lesson covering a new computer science topic. Students will get to participate in interactive, hands-on demonstrations as their instructors provide extensive insight. After the lesson finishes, students are tasked to demonstrate their newly learned skills via a self-guided projected.</p>
-                        <h5>Lunch (12:00p.m - 1:00p.m)</h5>
-                        <h5>Afternoon Activities (1:00p.m - 3:30p.m)</h5>
+                        <h5>Lunch & Office hours (12:00p.m - 1:00p.m)</h5>
+                        <p>Students are encouraged to leave and take a break or hang out with their friends in breakout rooms. Alternatively, instructors will be available in meeting rooms to ask questions and provide help.</p>
+                        <h5>Afternoon Activities (1:00p.m - 3:00p.m)</h5>
                         <p>Instructors introduce a new lesson, expanding on the topics covered that morning. Students will then be able to create a new project to practice their expanded skillset, or build off of their morning project to add additional functionality.</p>
                     </Card.Norm>
                     <Card.Norm header='Capstone Project'>
