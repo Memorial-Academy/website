@@ -7,7 +7,18 @@ import BulletList from '@/src/components/list';
 
 export const metadata: Metadata = {
     title: "Volunteer at Let's Code | Memorial Academy of Science and Technology",
-    description: "Volunteer with MAST and grow your skills while helping other students grow their's!"
+    description: "Volunteer with MAST and grow your skills while helping other students grow their's!",
+    openGraph: {
+        title: "Volunteer at Let's Code | Memorial Academy of Science and Technology",
+        description: "Volunteer with MAST and grow your skills while helping other students grow their's!",
+        url: "https://www.memorialacademy.org/volunteer/letscode",
+        images: {
+            url: "https://www.memorialacademy.org/lets_code.svg",
+            width: 512,
+            height: 512,
+            alt: "Let's Code logo"
+        },
+    }
 }
 
 const EnrollButton = <Enroll link="https://cloud.memorialacademy.org/apps/forms/s/EBq8qsBJzZskWqosiEYrEoSt" text="Volunteer for Let's Code!" />

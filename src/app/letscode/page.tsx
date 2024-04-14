@@ -6,7 +6,18 @@ import Enroll from '../../components/enroll';
 
 export const metadata: Metadata = {
     title: "Let's Code | Memorial Academy of Science and Technology",
-    description: "Computer Science summer camp for fifth through eigth graders."
+    description: "Computer Science summer camp for fifth through eigth graders.",
+    openGraph: {
+        title: "Let's Code | Memorial Academy of Science and Technology",
+        description: "Computer Science summer camp for fifth through eigth graders.",
+        url: "https://www.memorialacademy.org/letscode",
+        images: {
+            url: "https://www.memorialacademy.org/lets_code.svg",
+            width: 512,
+            height: 512,
+            alt: "Let's Code logo"
+        },
+    }
 }
 
 const IntroEnrollButton = <Enroll text="Enroll in Introductory Classes" link="https://cloud.memorialacademy.org/apps/forms/s/SBXyemr9kjGEtg7WLBwtF8aj" />

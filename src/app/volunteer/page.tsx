@@ -7,7 +7,18 @@ import Section from "@/src/components/section";
 
 export const metadata: Metadata = {
     title: "Volunteer | Memorial Academy of Science and Technology",
-    description: "Volunteer with MAST and grow your skills while helping other students grow their's!"
+    description: "Volunteer with MAST and grow your skills while helping other students grow their's!",
+    openGraph: {
+        title: "Volunteer | Memorial Academy of Science and Technology",
+        description: "Volunteer with MAST and grow your skills while helping other students grow their's!",
+        url: "https://memorialacademy.org/volunteer",
+        images: {
+            url: "https://www.memorialacademy.org/seal.svg",
+            width: 512,
+            height: 512,
+            alt: "MAST seal"
+        },
+    }
 }
 
 export default function Page() {

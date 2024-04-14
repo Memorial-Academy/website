@@ -6,7 +6,18 @@ import Section from '../../components/section';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
-    description: "STEM-centered demonstrations and activities, hosted live in a park"
+    description: "STEM-centered demonstrations and activities, hosted live in a park",
+    openGraph: {
+        title: "STEMpark | Memorial Academy of Science and Technology",
+        description: "STEM-centered demonstrations and activities, hosted live in a park",
+        url: "https://www.memorialacademy.org/stempark",
+        images: {
+            url: "https://www.memorialacademy.org/stempark.svg",
+            width: 512,
+            height: 512,
+            alt: "STEMpark logo"
+        },
+    }
 }
 
 const EnrollButton = <Enroll text="Enroll!" link="" />
