@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import Card from "@/src/components/card";
-import Enroll from "@/src/components/enroll";
+import {LearnMore} from "@/src/components/card";
+// import Enroll from "@/src/components/enroll";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
+
+export const metadata: Metadata = {
+    title: "Volunteer | Memorial Academy of Science and Technology",
+    description: "Volunteer with MAST and grow your skills while helping other students grow their's!"
+}
 
 export default function Page() {
     return (
@@ -38,6 +45,7 @@ export default function Page() {
                             <li>Experience and passion in the tools/subjects you wish to teach</li>
                             <li>Prior experience working with children/volunteering is preferred</li>
                             <li>Ability to work well in a team and be patient</li>
+                            <li>Availability on all days of the program you signed up for (please notify MAST of any conflicts before the program begins)</li>
                         </ul>
                     </Card.Norm>
                     <Card.Norm header="Why should I volunteer with MAST?">
@@ -46,10 +54,24 @@ export default function Page() {
                     </Card.Norm>
                     <p>Still have questions? Contact <a href="mailto:volunteer@memorialacademy.org">volunteer@memorialacademy.org</a></p>
                 </Section>
-                <Section heading="Join today!">
-                        <Enroll link="" text="Volunteer for Let's Code Introductory Classes" />
-                        <Enroll link="" text="Volunteer for Let's Code Advanced Classes" />
-                        <Enroll link="" text="Volunteer for STEMpark" />
+                <Section heading="Learn More About our Programs!">
+                        <Card.Half 
+                            left={
+                                <>
+                                    <h4>Let's Code</h4>
+                                    <p>Spread your knowledge and passion for computer science with the next generation!</p>
+                                    <LearnMore link='/volunteer/letscode' />
+                                </>
+                            }
+                            right={
+                                <>
+                                    <h4>STEMpark</h4>
+                                    <p>Help students problem solve their way through projects and challenges, as they expand their STEM skillsets!</p>
+                                    {/* <LearnMore link="/volunteer/stempark" /> */}
+                                    <p>Volunteer registration opens April 17</p>
+                                </>
+                            }
+                        />
                 </Section>
             </main>
         </>

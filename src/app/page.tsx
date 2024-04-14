@@ -34,7 +34,7 @@ export default function Home() {
                         <p>Whether your student is a complete novice or an experienced developer, Let's Code has something for them! Let's Code has been created with the goal of introducing computer science to students of all backgrounds (regardless of income and background), using real-world tools and techniques. Gain professional skills via lessons led by experienced instructors and self-guided projects designed to grow the creativity and problem-solving skills of students.</p>
                         <LearnMore link="/letscode" />
                     </Card.Left>
-                    <Card.Left image="./stemventure.svg" header="STEMpark">
+                    <Card.Left image="./stempark.svg" header="STEMpark">
                         <p><b>Grades 3-12; parents welcome!</b></p>
                         <p><b>Cost: Free (No enrollment required*)</b></p>
                         <p>Registration opens April 17.</p>
