@@ -5,13 +5,10 @@
                 fill: #28b328;;
             }
         </style>
-    </defs>
-    
-    <path d="M0 256 a128 -32 180 0 1 256 0 Z" fill="#0b720b" /> <!-- Ground -->
-    <rect width="64" height="160" x="96" y="80" fill="#5e3513" /> <!-- Tree trunk -->
+    </defs>    
+    <path d="M80 240 c32 -80 32 -90 8 -160 l80 0 c-24 80 -24 90 8 160 Z" fill="#5e3513" />
     <!-- Leaves -->
     <g>
-        <!-- <circle r="32" cx="" cy="" class="leaf" /> -->
         <circle r="32" cx="120" cy="90" class="leaf" />
         <circle r="32" cx="135" cy="38" class="leaf" />
         <circle r="32" cx="98" cy="72" class="leaf" />
@@ -31,4 +28,5 @@
         <path d="M199 168 c-3 0 -4 -2 -4 -5 c3 0 4 2 4 5" class="leaf" />
         <path d="M200 162 l0 -15 M196 158 l0 -12 M 204 155 l0 -12" stroke="#1a1a1a" stroke-width="1" />
     </g>
+    <path d="M0 256 a128 -32 180 0 1 256 0 Z" fill="#0b720b" /> <!-- Ground -->
 </svg>
