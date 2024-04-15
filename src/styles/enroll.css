@@ -47,6 +47,12 @@ a.enroll-button {
     .enroll-button-container {
         max-width: 75vw;
     }
+    div.card div:is(:last-of-type) .enroll-button-wrapper {
+        margin-bottom: 15vh;
+    }
+    .enroll-button-wrapper {
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 500px) {
