@@ -17,7 +17,7 @@ export default function BioCards({cards}: {cards: Array<BioCardProps>}) {
                 <img src={card.img ? card.img : "/seal.svg"} alt={`Picture of ${card.name}`} />
                 <p className="bio-card-name">{card.name}</p>
                 <p className="bio-card-title">{card.title}</p>
-                <p>{card.bio}</p>
+                <p className="bio-card-about">{card.bio}</p>
             </div>
         )
         cardElems.push(newCard);

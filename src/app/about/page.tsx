@@ -24,7 +24,7 @@ export default function Page() {
     return (
         <>
             <Header
-                title="About"
+                title="About Us"
                 tagline=""
                 background="var(--sea-blue-gradient)"
                 font=""
@@ -68,9 +68,14 @@ export default function Page() {
                     <BioCards cards={[
                         {
                             name: "Griffin Ferguson",
-                            title: "President",
-                            img: "",
-                            bio: "I'm Griffin"
+                            title: "Board Member & President",
+                            img: "/about/griffin.jpg",
+                            bio: "Griffin is a junior at Stratford High School. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal and IT duties related to MAST. Outside of MAST, he is the vice president of Stratford's Computer Science club, runs a coding club at a local community center, participates in speech and debate, and is the lighting director for the Stratford Playhouse. While his interest in computer science involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
+                        }, {
+                            name: "Devon Schwartz",
+                            title: "Board Member, MAST; Co-founder, Let's Code",
+                            img: "/about/devon.jpg",
+                            bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford high school. This is what led him to be a co founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the Family Point Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
                         }
                     ]} />
                 </Section>
