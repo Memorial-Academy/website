@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Card from '../../components/card';
 import Enroll from '../../components/enroll';
 import Section from '../../components/section';
+import BulletList from '@/src/components/list';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll text="Enroll!" link="" />
+const EnrollButton = <Enroll text="Enroll!" link="https://cloud.memorialacademy.org/apps/forms/s/bt7KKCwSammaxo3FyzBX94io" />
 
 export default function Page() {
     return (
@@ -43,19 +44,38 @@ export default function Page() {
                     </ul>
                 </Card.Left>
                 {EnrollButton}
+                <Section heading="Explore STEM">
+                    <p>The besy way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to different STEM concepts, all while getting them out of the classroom and into the outdoors.</p>
+                    <p>Parents are welcome to attend to watch the demonstrations and help their kids learn.</p>
+                </Section>
                 <Section heading='Day-by-Day'>
                     <Card.Norm header='Day 1: Engineering'>
-                        <p>Engineering Day will begin with a demonstration over a variety of topics important to engineering, such as gravity, structural forces, </p>
+                        <p>Engineering Day will begin with a demonstration over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will then participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
                     </Card.Norm>
                     <Card.Norm header='Day 2: Life Sciences'>
-                        
+                        <p>A combination of biology, ecosystem, anatomy, and medicine! Students will explore the different ecosystems and organisms present in the park, and discover the different traits these organisms use to help them survive, and discover the food chains that keep the park diverse. Then, they'll work together to create a life-sized drawing of the human body and it's different organs in a riddle-filled scavenger hunt.</p>
                     </Card.Norm>
                     <Card.Norm header='Day 3: Natural Sciences'>
-
+                        <p>Day Three is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to learning about the water cycle.</p>
                     </Card.Norm>
                     <Card.Norm header="Day 4: Astronomy">
-
+                        <p>Look to the sky! Students will get to observe the sun through a telescope and record their observations. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park!</p>
+                        {/* <h5>Astronomy "Field Trip"</h5>
+                        <p><b>Details:</b></p>
+                        <ul>
+                            <li><b>Date</b>: June 27, 2024</li>
+                            <li><b>Time</b>: TBD (will be after 8:00p.m)</li>
+                            <li><b>Location</b>: Memorial Park Picnic Loop</li>
+                            <li>Weather permitting</li>
+                            <li>Details subject to change</li>
+                            <li>Parents required to attend</li>
+                        </ul>
+                        <p>Join STEMpark for a night of star-gazing. </p> */}
                     </Card.Norm>
+                </Section>
+                <Section heading="Sign up today!">
+                    {EnrollButton}
+                   <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p>
                 </Section>
             </main>
         </>

@@ -15,8 +15,8 @@ export default function Nav() {
                 <a href="/donate">Donate</a> */}
                 <span>|</span>
                 <a href="/volunteer">Volunteer</a>
-                <span>|</span>
-                <a href="/about">About</a>
+                {/* <span>|</span>
+                <a href="/about">About</a> */}
             </div>
         </nav>
     )

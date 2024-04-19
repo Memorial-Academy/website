@@ -78,8 +78,7 @@ export default function Page() {
                                 <>
                                     <h4>STEMpark</h4>
                                     <p>Help students problem solve their way through projects and challenges, as they expand their STEM skillsets!</p>
-                                    {/* <LearnMore link="/volunteer/stempark" /> */}
-                                    <p>Volunteer registration opens April 17</p>
+                                    <LearnMore link="/volunteer/stempark" />
                                 </>
                             }
                         />
