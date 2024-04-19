@@ -61,12 +61,12 @@ div.card > div {
     }
     div.card.card-right, div.card.card-left {
         grid-template-columns: 100%;
-        grid-template-rows: 20% 0% 80%;
+        grid-template-rows: 20% 80%;
     }
     div.card.card-half {
         gap: 0;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 0% 50%;
+        grid-template-rows: 50% 50%;
     }
     div.card div.card-image {
         width: 30%;
