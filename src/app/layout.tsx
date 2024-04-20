@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 export const metadata: Metadata = {
     title: "Memorial Academy of Science and Technology",
@@ -31,6 +32,7 @@ export default function RootLayout({
             <body>
                 <Nav />
                 {children}
+                <Footer />
             </body>
         </html>
     );
