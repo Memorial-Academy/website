@@ -35,9 +35,8 @@ export default function Home() {
                         <LearnMore link="/letscode" />
                     </Card.Left>
                     <Card.Left image="./stempark.svg" header="STEMpark">
-                        <p><b>Grades 3-12; parents welcome!</b></p>
+                        <p><b>Grades 2-8; parents welcome!</b></p>
                         <p><b>Cost: Free (No enrollment required*)</b></p>
-                        <p>Registration opens April 17.</p>
                         <p>The best way to learn is through shared experiences! Come to the park and join us for fun, detailed, easy-to-understand demonstrations of various STEM topics. Afterwards, students will break off into groups to participate in self-guided activites to solve a problem related to the day's topic.</p>
                         <p>*enrollment required to participate in interactive/hands-on activities</p>
                         <LearnMore link="/stempark" />
