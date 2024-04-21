@@ -1,6 +1,6 @@
 .bio-card-container {
     display: flex;
-    gap: 3%;
+    gap: 2%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -8,7 +8,7 @@
 .bio-card {
     background-color: rgb(200,200,200);
     border-radius: 5%;
-    width: 28%;
+    width: 27%;
     padding: 2.5%;
     font-size:1rem;
     margin-bottom: 3%;
@@ -17,8 +17,8 @@
 
 .bio-card img {
     border-radius: 50%;
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
+    margin: 0 25%;
 }
 
 .bio-card-name {

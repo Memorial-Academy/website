@@ -76,6 +76,21 @@ export default function Page() {
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/devon.jpg",
                             bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford high school. This is what led him to be a co founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the Family Point Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
+                        }, {
+                            name: "Jasmine Zeng",
+                            title: "Board Member, MAST; Co-founder, Let's Code",
+                            img: "/about/jasmine.jpg",
+                            bio: "Jasmine is an undergraduate business student at Carnegie Mellon University pursuing a Business Administration major, Human Computer Interaction minor, and pre-law path. She is passionate about helping economically disadvantaged students reach their fullest potential."
+                        }, {
+                            name: "Isabella Xu",
+                            title: "Vice President, MAST; Program Director, STEMpark",
+                            img: "/about/isabella.jpg",
+                            bio: "Isabella is a junior at the Texas Academy of Mathematics and Science (TAMS). Since a young age, she has been keenly aware of the large disparity in educational opportunities that exists based on economic status. A firm believer of educational equity, she has volunteered/worked for multiple STEM enrichment programs, the most notable one being Lets Code 2022. This eventually prompted her to found STEM Camp (now STEMpark) where she currently holds the position of president. Outside of MAST, Isabella primarily dedicates her time to her research lab at UNT or competitive coding."
+                        }, {
+                            name: "Grace Abdelnour",
+                            title: "Vice President, MAST; Program Director, Let's Code",
+                            img: "/about/grace.jpg",
+                            bio: "Grace is a junior at Stratford High School who forgot to submit their bio for MAST."
                         }
                     ]} />
                 </Section>
