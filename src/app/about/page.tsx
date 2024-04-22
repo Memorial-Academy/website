@@ -30,6 +30,14 @@ export default function Page() {
                 font=""
             />
             <main>
+                <Section heading='Our Mission'>
+                    <p>Every student has a different background; the job of a functioning education system is to ensure every student has access to high quality educational opportunities that teach them new skills and prepare them for life after school. To often, our education systems are unable to provide them with these high-quality opportunities. MAST aims to be part of the fix to this problem!</p>
+                    <p>The Memorial Academy of Science and Technology was founded to provide free/low-cost summer programs to elementary/middle school students of all backgrounds, with a focus on computer science and STEM programs. It is our belief that in the modern world, these two crucial sectors that captivate the attention of millions of students are inadequately taught in schools, resulting in student's views on these exciting fields being tainted by boring homework assignments and poorly structured curriculums.</p>
+                    <p>Our programs are created by experienced high school students, dedicated to changing the world by sharing their knowledge and passion with the next generation. We attempt to work side-by-side with school districts, schools, and teachers to compliment their programs and give students every opportunity for success and learning.</p>
+                </Section>
+                <Section heading='Our Programs'>
+                    <p>We believe the best way to learn is by experience, and as a result our programs utilize a "guided-experimentation" classroom model, drawing inspiration from several research papers and discussions with experienced educators. This model allows students to be introduced to a subject via an in-depth, demonstration filled, interactive lesson. Following this, students work independently or in a small group to complete a student-led project. Students complete these projects with only a generic prompt; the manner in which they complete the project is up to their knowledge, problem solving, and creativity. MAST team members take on the role of guiding students through these projects as needed, stepping in only to help students through tough problems and help them expand on their skills.</p>
+                </Section>
                 <Section heading="Our History">
                     <Card.Left image='/about/lets_code_old.png' header='2021'>
                         <p>
@@ -68,14 +76,14 @@ export default function Page() {
                     <BioCards cards={[
                         {
                             name: "Griffin Ferguson",
-                            title: "Board Member & President",
+                            title: "Board Member & President, MAST; Program Director, Let's Code & STEMpark",
                             img: "/about/griffin.jpg",
                             bio: "Griffin is a junior at Stratford High School. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal and IT duties related to MAST. Outside of MAST, he is the vice president of Stratford's Computer Science club, runs a coding club at a local community center, participates in speech and debate, and is the lighting director for the Stratford Playhouse. While his interest in computer science involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
                         }, {
                             name: "Devon Schwartz",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/devon.jpg",
-                            bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford high school. This is what led him to be a co founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the Family Point Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
+                            bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford high school. This is what led him to be a co-founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the Family Point Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
                         }, {
                             name: "Jasmine Zeng",
                             title: "Board Member, MAST; Co-founder, Let's Code",
@@ -83,12 +91,12 @@ export default function Page() {
                             bio: "Jasmine is an undergraduate business student at Carnegie Mellon University pursuing a Business Administration major, Human Computer Interaction minor, and pre-law path. She is passionate about helping economically disadvantaged students reach their fullest potential."
                         }, {
                             name: "Isabella Xu",
-                            title: "Vice President, MAST; Program Director, STEMpark",
+                            title: "Board Member & Vice President, MAST; Program Director, STEMpark",
                             img: "/about/isabella.jpg",
                             bio: "Isabella is a junior at the Texas Academy of Mathematics and Science (TAMS). Since a young age, she has been keenly aware of the large disparity in educational opportunities that exists based on economic status. A firm believer of educational equity, she has volunteered/worked for multiple STEM enrichment programs, the most notable one being Lets Code 2022. This eventually prompted her to found STEM Camp (now STEMpark) where she currently holds the position of president. Outside of MAST, Isabella primarily dedicates her time to her research lab at UNT or competitive coding."
                         }, {
                             name: "Grace Abdelnour",
-                            title: "Vice President, MAST; Program Director, Let's Code",
+                            title: "Board Member & Vice President, MAST; Program Director, Let's Code",
                             img: "/about/grace.jpg",
                             bio: "Grace is a junior at Stratford High School who forgot to submit their bio for MAST."
                         }
