@@ -23,6 +23,7 @@ nav h1 {
 nav img {
     width: 22%;
     max-height: 8rem;
+    aspect-ratio: 1/1;
 }
 
 #nav-left, #nav-right {
@@ -62,6 +63,36 @@ nav img {
     font-weight: bold;
 }
 
+#nav-hamburger-icon {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+    padding: 0 20%;
+}
+#nav-hamburger-icon svg {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    cursor: pointer
+}
+
+#nav-hamburger-close {
+    display:none;
+    width: 100%;
+    text-align: right;
+    color: var(--gray);
+}
+
+#nav-hamburger-close:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#nav-right a[href="/"] {
+    display:none;
+}
+
 @media screen and (max-width:2000px) and (min-width:1550px) {
     nav {
         grid-template-columns: 29.5% 69.5%;
@@ -74,14 +105,69 @@ nav img {
 }
 @media screen and (max-width: 770px) {
     nav {
-        grid-template-columns: 19.5% 79.5%;
-        height: 5rem;
+        grid-template-columns: 80% 20%;
+        gap: 0;
+        height: 4rem;
+    }
+    nav h1 {
+        margin: 0;
+    }
+    nav img {
+        max-height: 4rem;
+    }
+    #nav-hamburger-icon {
+        display:flex;
+    }
+    #nav-right {
+        z-index: 99;
+        position: absolute;
+        width: 50vw;
+        right: -100%;
+        top: 0;
+        background: linear-gradient(270deg, rgb(0,0,0) 60%, rgba(0,0,0,0) 100%);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+        padding-left: 40%;
+        gap: 0.8rem;
+        height: 100vh;
+        margin: 0;
+        transition: right 0.55s ease-out;
+    }
+    #nav-right span {
+        display: none;
+    }
+    #nav-right a {
+        color: var(--white)
+    }
+    #nav-hamburger-close {
+        display: block;
+    }
+    #nav-right a[href="/"] {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    nav {
+        grid-template-columns: 50% 50%;
+        padding: 0.6rem 5vw;
+        width: 90vw;
+    }
+    nav img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
     }
     nav h1 {
         display: none;
     }
-    nav img {
-        width: 100%;
-        max-height: 5rem;
+    #nav-hamburger-icon {
+        width: 80%;
+        padding: 0 10%;
+    }
+    #nav-right {
+        padding-left: 50%;
     }
 }
