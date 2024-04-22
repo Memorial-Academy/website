@@ -27,7 +27,13 @@ export default function Nav() {
                     {/* <span>|</span>
                     <a href="/donate">Donate</a> */}
                     <span>|</span>
-                    <a href="/volunteer">Volunteer</a>
+                    <NavSubsection
+                        parent={["Volunteer", "/volunteer"]}
+                        links={[
+                            ["Let's Code", "/volunteer/letscode"],
+                            ["STEMpark", "/volunteer/stempark"],
+                        ]}
+                    />
                     <span>|</span>
                     <a href="/about">About</a>
                 </div>
@@ -37,6 +43,40 @@ export default function Nav() {
                     </svg>
                 </div>
             </nav>
+        </>
+    )
+}
+
+function NavSubsection({parent, links}: {parent: Array<string>, links: Array<Array<string>>}) {
+    var linkList = links.map((link) => {
+        return <a key={link[0]} href={link[1]}>{link[0]}</a>
+    })
+
+    const [isHovering, setIsHovering] = React.useState(false);
+
+    const handleMouseOver = () => {
+      setIsHovering(true);
+    };
+
+    const handleMouseOut = () => {
+      setIsHovering(false);
+    };
+    
+    return (
+        <>
+            <div className="nav-subsection-wrapper" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                <a href={parent[1]}>{parent[0]} &#11206;</a>
+                {isHovering && (
+                <div className="nav-subsection">
+                    {linkList}
+                </div>)}
+            </div>
+            <div className="nav-hamburger-subsection-wrapper">
+                <a href={parent[1]}><b>{parent[0]}</b></a>
+                <div className="nav-hamburger-subsection">
+                    {linkList}
+                </div>
+            </div>
         </>
     )
 }

@@ -1,8 +1,10 @@
 import React from "react";
 
 export default function BulletList({title, points}: {title: string, points: Array<string | React.ReactNode>}) {
+    var keyCount = 0;
     var list = points.map((point) => {
-        return <li>{point}</li>
+        keyCount++;
+        return <li key={title + "-" + keyCount}>{point}</li>
     })
 
     return (

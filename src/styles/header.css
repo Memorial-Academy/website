@@ -19,7 +19,7 @@ header div {
     background-color: rgba(40,40,40,0.25);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 850px) {
     header {
         margin-top: 6.2rem;
     }
