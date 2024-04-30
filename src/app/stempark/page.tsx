@@ -34,9 +34,15 @@ export default function Page() {
             <main>
                 <Card.Left image="/stempark.svg || STEMpark logo" header="Details">
                     <ul>
-                        <li><b>Dates:</b> June 24 - 27, 11:30a.m - 2:30p.m</li>
+                        <li><b>Dates:</b> June 24 - 27</li>
+                        <li>
+                            <b>Times:</b>
+                            <ul>
+                                <li>June 24 - 26: 11:30a.m - 2:30p.m</li>
+                                <li>June 27: 6:30p.m - 9:30p.m</li>
+                            </ul>
+                        </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
-                        <li><b>Grades:</b> 2 - 8</li>
                         <li><b>Cost:</b> Free</li>
                         <li>Parents and unenrolled students are welcome to watch demonstrations!</li>
                         <li><b>Limited spots available!</b></li>
@@ -58,18 +64,8 @@ export default function Page() {
                         <p>Day Three is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to learning about the water cycle.</p>
                     </Card.Norm>
                     <Card.Norm header="Day 4: Astronomy">
-                        <p>Look to the sky! Students will get to observe the sun through a telescope and record their observations. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park!</p>
-                        {/* <h5>Astronomy "Field Trip"</h5>
-                        <p><b>Details:</b></p>
-                        <ul>
-                            <li><b>Date</b>: June 27, 2024</li>
-                            <li><b>Time</b>: TBD (will be after 8:00p.m)</li>
-                            <li><b>Location</b>: Memorial Park Picnic Loop</li>
-                            <li>Weather permitting</li>
-                            <li>Details subject to change</li>
-                            <li>Parents required to attend</li>
-                        </ul>
-                        <p>Join STEMpark for a night of star-gazing. </p> */}
+                        <p>Look to the sky! After arriving at the park in the late evening, students will get to observe the sun, stars, and potentially some galaxies and nebulae through a telescope and record their observations. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park!</p>
+                        <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:30p.m and ends at 9:30p.m, unlike the other days. Please plan accordingly.</p>
                     </Card.Norm>
                 </Section>
                 <Section heading="Sign up today!">

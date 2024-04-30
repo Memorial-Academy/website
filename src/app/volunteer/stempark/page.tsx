@@ -36,7 +36,14 @@ export default function Page() {
                 <Section heading="Volunteer for STEMpark!">
                     <Card.Left image='/stempark.svg' header="Details">
                     <ul>
-                        <li><b>Dates:</b> June 24 - 27, 11:30a.m - 2:30p.m</li>
+                        <li><b>Dates:</b> June 24 - 27</li>
+                        <li>
+                            <b>Times:</b>
+                            <ul>
+                                <li>June 24 - 26: 11:30a.m - 2:30p.m</li>
+                                <li>June 27: 6:30p.m - 9:30p.m</li>
+                            </ul>
+                        </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
                         <li><b>Limited spots available!</b></li>
                     </ul>
