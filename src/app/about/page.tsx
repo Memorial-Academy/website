@@ -99,6 +99,16 @@ export default function Page() {
                             title: "Board Member & Vice President, MAST; Program Director, Let's Code",
                             img: "/about/grace.jpg",
                             bio: "Grace is a junior at Stratford High School who forgot to submit their bio for MAST."
+                        }, {
+                            name: "Neil Aylor",
+                            title: "Board Member, MAST; Co-founder, Let's Code",
+                            img: "",
+                            bio: "Neil is currently a sophomore at Texas A&M University and was previously a co-founder of Let's Code."
+                        }, {
+                            name: "Jean Hoang",
+                            title: "Board Member, MAST; Co-founder, Let's Code",
+                            img: "",
+                            bio: "Jean is current a sophomore at Stanford University and was previously a co-founder of Let's Code."
                         }
                     ]} />
                 </Section>

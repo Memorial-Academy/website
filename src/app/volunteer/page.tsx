@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Card from "@/src/components/card";
 import {LearnMore} from "@/src/components/card";
-// import Enroll from "@/src/components/enroll";
+import Enroll from "@/src/components/enroll";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 
@@ -33,6 +33,14 @@ export default function Page() {
             <main>
                 <Section heading="Join our team!">
                     <p>MAST relies on passionate, experienced volunteers to assist in running its programs. Volunteering for MAST is an incredible experience; while you develop leadership, social, and teaching skills, you're helping and empowering students to learn new skills and unlock potential they may have previously never known they had.</p>
+                    <Card.Half 
+                        left={
+                            <Enroll link='/volunteer/letscode' text="Volunteer for Let's Code"/>
+                        }
+                        right={
+                            <Enroll link="/volunteer/stempark" text='Volunteer for STEMpark' />
+                        }
+                    />
                 </Section>
                 <Section heading="FAQ's">
                     <h4>What roles can I volunteer for?</h4>

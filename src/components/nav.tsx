@@ -27,13 +27,14 @@ export default function Nav() {
                     {/* <span>|</span>
                     <a href="/donate">Donate</a> */}
                     <span>|</span>
-                    <NavSubsection
+                    <a href="/volunteer">Volunteer</a>
+                    {/* <NavSubsection
                         parent={["Volunteer", "/volunteer"]}
                         links={[
                             ["Let's Code", "/volunteer/letscode"],
                             ["STEMpark", "/volunteer/stempark"],
                         ]}
-                    />
+                    /> */}
                     <span>|</span>
                     <a href="/about">About</a>
                 </div>

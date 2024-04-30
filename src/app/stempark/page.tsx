@@ -3,7 +3,6 @@ import Header from "../../components/header";
 import Card from '../../components/card';
 import Enroll from '../../components/enroll';
 import Section from '../../components/section';
-import BulletList from '@/src/components/list';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
