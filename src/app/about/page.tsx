@@ -98,17 +98,17 @@ export default function Page() {
                             name: "Grace Abdelnour",
                             title: "Board Member & Vice President, MAST; Program Director, Let's Code",
                             img: "/about/grace.jpg",
-                            bio: "Grace is a junior at Stratford High School who forgot to submit their bio for MAST."
+                            bio: "Grace Abdelnour is a junior at Stratford High School. They have been programming for six years and plan to major in computer science in college. They have previously volunteered at Let;s Code and often help at the Family Point Resources coding club. Outside of school, they enjoy working on personal programming projects and spend their free time either reading or playing chess."
                         }, {
                             name: "Neil Aylor",
                             title: "Board Member, MAST; Co-founder, Let's Code",
-                            img: "",
-                            bio: "Neil is currently a sophomore at Texas A&M University and was previously a co-founder of Let's Code."
+                            img: "/about/neil.jpg",
+                            bio: "Neil Aylor is a former senior at Stratford High School. He is now a sophomore at Texas A&M majoring in computer science and has been programming for nine years. He is the former president of the Stratford Chess Club and Stratford Computer Science Club."
                         }, {
                             name: "Jean Hoang",
                             title: "Board Member, MAST; Co-founder, Let's Code",
-                            img: "",
-                            bio: "Jean is current a sophomore at Stanford University and was previously a co-founder of Let's Code."
+                            img: "/about/jean.jpg",
+                            bio: "Jean Hoang is a freshman at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
                         }
                     ]} />
                 </Section>
