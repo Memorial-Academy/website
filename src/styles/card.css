@@ -59,14 +59,17 @@ div.card > div {
         gap: 3%;
         margin: 40px 0;
     }
-    div.card.card-right, div.card.card-left {
-        grid-template-columns: 100%;
+    div.card.card-right, div.card.card-left, div.card.card-half {
+        /* grid-template-columns: 100%;
         grid-template-rows: 20% 80%;
     }
-    div.card.card-half {
+     { */
         gap: 0;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    div.card.card-half {
+        margin-bottom: 8em;
     }
     div.card div.card-image {
         width: 30%;

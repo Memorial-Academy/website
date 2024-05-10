@@ -156,7 +156,7 @@ nav img {
         z-index: 99;
         position: absolute;
         width: 50vw;
-        right: -100%;
+        right: -120%;
         top: 0;
         background: linear-gradient(270deg, rgb(0,0,0) 60%, rgba(0,0,0,0) 100%);
         flex-direction: column;

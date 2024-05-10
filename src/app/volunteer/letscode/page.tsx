@@ -37,19 +37,17 @@ export default function Page() {
                     <Card.Left image='/lets_code.svg' header="Details">
                         <ul>
                             <li>
-                                <b>Dates:</b>
-                                <ul>
-                                    <li>Week 1: June 3 - 7</li>
-                                    <li>Week 2: June 10 - 14</li>
-                                    <li>Week 3: June 17 - 21</li>
-                                </ul>
+                                <BulletList title='Dates:' points={[
+                                    "Week 1: June 3 - 7",
+                                    "Week 2: June 10 - 14",
+                                    "Week 3: June 17 - 21"
+                                ]} />
                             </li>
                             <li>
-                                <b>Times:</b>
-                                <ul>
-                                    <li>Monday - Thursday: 9:00a.m - 3:30p.m</li>
-                                    <li>Friday: 9:00a.m - 10:30a.m</li>
-                                </ul>
+                                <BulletList title='Times:' points={[
+                                    "Monday - Thursday: 9:00a.m - 3:30p.m",
+                                    "Friday: 9:00a.m - 10:30a.m"
+                                ]} />
                             </li>
                             <li><b>Location:</b> Virtual</li>
                         </ul>

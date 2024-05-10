@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Card from "../../components/card";
 import Section from "../../components/section";
 import Enroll from '../../components/enroll';
+import BulletList from '@/src/components/list';
 
 export const metadata: Metadata = {
     title: "Let's Code | Memorial Academy of Science and Technology",
@@ -51,7 +52,7 @@ export default function Page() {
                             </ul>
                         </li>
                         <li><b>Location:</b> Virtual</li>
-                        <li><b>Grades:</b> 6 - 8</li>
+                        <li><b>Grades:</b> 5 - 8</li>
                         <li><b>Cost:</b> Free</li>
                     </ul>
                 </Card.Left>
@@ -60,33 +61,29 @@ export default function Page() {
                         <>
                             <h4>Introductory Classes</h4>
                             <p>Introductory classes are one-week classes that introduce students to the basics of computer science and programming. They assume zero prior knowledge and provide students a simple introduction to real-world tools and techniques.</p>
-                            <p><b>When do these classes take place?</b></p>
-                            <ul>
-                                <li>Session 1: June 3 - 7</li>
-                                <li>Session 2: June 10 - 14</li>
-                                <li>Session 3: June 17 - 21</li>
-                            </ul>
-                            <p><b>Which classes are "introductory classes"?</b></p>
-                            <ul>
-                                <li>Introduction to Python</li>
-                                <li>Introduction to Game Development with Scratch</li>
-                                <li>Introduction to Web Development</li>
-                            </ul>
+                            <BulletList title='When do these classes take place?' points={[
+                                "Session 1: June 3 - 7",
+                                "Session 2: June 10 - 14",
+                                "Session 3: June 17 - 21"
+                            ]} />
+                            <BulletList title='Which classes are "introductory classes"?' points={[
+                                "Introduction to Python",
+                                "Introduction to Game Development with Scratch",
+                                "Introduction to Web Development"
+                            ]} />
                             {IntroEnrollButton}
                         </>
                     } right={
                         <>
                             <h4>Advanced Classes</h4>
                             <p>Advanced classes are two-week long classes that build off the existing skills of students (such as the skills they learnt at a Let's Code Introductory Class). These classes focus on teaching students how to take their skills and apply them to a computer science profession. Students will expand on their existing knowledge to learn complex topics and build advanced applications.</p>
-                            <p><b>When do these classes take place?</b></p>
-                            <ul>
-                                <li>Session 1: June 10 - 14 & June 17 - 21</li>
-                            </ul>
-                            <p><b>Which classes are "advanced classes"?</b></p>
-                            <ul>
-                                <li>Advanced Programming with Python</li>
-                                <li>Advanced Web Development</li>
-                            </ul>
+                            <BulletList title='When do these classes take place?' points={[
+                                "Session 1: June 10 - 14 & June 17 - 21"
+                            ]} />
+                            <BulletList title='Which classes are "advanced classes classes"?' points={[
+                                "Advanced Programming with Python",
+                                "Advanced Web Development"
+                            ]} />
                             <p>
                                 <b>Can my student take an introductory class and an advanced class in the same year?</b>
                                 <br/>

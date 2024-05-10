@@ -39,7 +39,7 @@ export default function Page() {
                             <b>Times:</b>
                             <ul>
                                 <li>June 24 - 26: 11:30a.m - 2:30p.m</li>
-                                <li>June 27: 6:30p.m - 9:30p.m</li>
+                                <li>June 27: 6:00p.m - 9:00p.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
@@ -65,7 +65,7 @@ export default function Page() {
                     </Card.Norm>
                     <Card.Norm header="Day 4: Astronomy">
                         <p>Look to the sky! After arriving at the park in the late evening, students will get to observe the sun, stars, and potentially some galaxies and nebulae through a telescope and record their observations. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park!</p>
-                        <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:30p.m and ends at 9:30p.m, unlike the other days. Please plan accordingly.</p>
+                        <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:00p.m and ends at 9:00p.m, unlike the other days. Please plan accordingly.</p>
                     </Card.Norm>
                 </Section>
                 <Section heading="Sign up today!">
