@@ -3,6 +3,7 @@ import Header from "../../components/header";
 import Card from '../../components/card';
 import Enroll from '../../components/enroll';
 import Section from '../../components/section';
+import Banner from '@/src/components/banner';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
@@ -25,6 +26,7 @@ const EnrollButton = <Enroll text="Enroll in STEMpark!" link="https://cloud.memo
 export default function Page() {
     return (
         <>
+            <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" />
             <Header
                 title="STEMpark"
                 tagline="STEM-centered demonstrations and activities for grades two through eight, hosted live in a park"
@@ -34,12 +36,12 @@ export default function Page() {
             <main>
                 <Card.Left image="/stempark.svg || STEMpark logo" header="Details">
                     <ul>
-                        <li><b>Dates:</b> June 24 - 27</li>
+                        <li><b>Dates:</b> July 22 - 25</li>
                         <li>
                             <b>Times:</b>
                             <ul>
-                                <li>June 24 - 26: 11:30a.m - 2:30p.m</li>
-                                <li>June 27: 6:00p.m - 9:00p.m</li>
+                                <li>July 22 - 24: 11:30a.m - 2:30p.m</li>
+                                <li>July 25: 6:00p.m - 9:00p.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>

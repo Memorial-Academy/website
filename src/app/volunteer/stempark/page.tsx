@@ -4,6 +4,7 @@ import Enroll from "@/src/components/enroll";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 import BulletList from '@/src/components/list';
+import Banner from '@/src/components/banner';
 
 export const metadata: Metadata = {
     title: "Volunteer at STEMpark | Memorial Academy of Science and Technology",
@@ -26,6 +27,7 @@ const EnrollButton = <Enroll link="https://cloud.memorialacademy.org/apps/forms/
 export default function Page() {
     return (
         <>
+            <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" />
             <Header
                 title="Volunteer at STEMpark"
                 tagline="Help the next generation experience STEM"
@@ -36,12 +38,12 @@ export default function Page() {
                 <Section heading="Volunteer for STEMpark!">
                     <Card.Left image='/stempark.svg' header="Details">
                     <ul>
-                        <li><b>Dates:</b> June 24 - 27</li>
+                        <li><b>Dates:</b> July 22 - 25</li>
                         <li>
                             <b>Times:</b>
                             <ul>
-                                <li>June 24 - 26: 11:30a.m - 2:30p.m</li>
-                                <li>June 27: 6:30p.m - 9:30p.m</li>
+                                <li>July 22 - 24: 11:30a.m - 2:30p.m</li>
+                                <li>July 25: 6:30p.m - 9:30p.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
