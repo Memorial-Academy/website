@@ -27,7 +27,7 @@ const EnrollButton = <Enroll link="https://cloud.memorialacademy.org/apps/forms/
 export default function Page() {
     return (
         <>
-            <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" />
+            {/* <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" /> */}
             <Header
                 title="Volunteer at STEMpark"
                 tagline="Help the next generation experience STEM"
