@@ -7,7 +7,7 @@ import Section from "../components/section";
 export default function Home() {
     return (
         <>
-            <Banner message={"Now enrolling 2024 summer programs!"} link="#programs" />
+            {/* <Banner message={"Now enrolling 2024 summer programs!"} link="#programs" /> */}
             {/* <Banner message={"Support the future of high-quality summer camps; donate today!"} link="/donate" /> */}
             <Header
                 title="Boost your child's learning!"
