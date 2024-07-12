@@ -58,11 +58,11 @@ export default function Page() {
                     <Card.Norm header='Day 1: Engineering'>
                         <p>Engineering Day will kick off the camp with demonstrations over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will then participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
                     </Card.Norm>
-                    <Card.Norm header='Day 2: Life Sciences'>
-                        <p>A combination of biology, ecosystems, anatomy, and medicine! Students will learn about the anatomy of different organisms and the traits that help them survive in their environment, before creating life-sized diagrams of the human body. Finally, they'll learn about first-aid and how diseases spread through the world.</p>
-                    </Card.Norm>
-                    <Card.Norm header='Day 3: Natural Sciences'>
+                    <Card.Norm header='Day 2: Natural Sciences'>
                         <p>Day Three is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to seeing the water cycle unfold in real-time.</p>
+                    </Card.Norm>
+                    <Card.Norm header='Day 3: Life Sciences'>
+                        <p>A combination of biology, ecosystems, anatomy, and medicine! Students will learn about the anatomy of different organisms and the traits that help them survive in their environment, before creating life-sized diagrams of the human body. Finally, they'll learn about first-aid and how diseases spread through the world.</p>
                     </Card.Norm>
                     <Card.Norm header="Day 4: Astronomy">
                         <p>Look to the sky! After arriving at the park in the late evening, students will get to learn about the phases of the Moon and design their own spacecraft/rockets using criteria from real-world missions. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park! Finally, to end camp, students will get to observe the sun, stars, and potentially some galaxies and nebulae through a telescope and record their observations.</p>
@@ -73,7 +73,8 @@ export default function Page() {
                     {/* {EnrollButton}
                     <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p> */}
                     <p className="closed-signup">
-                        <b>Sign-ups for STEMpark are now closed. We apologize for the inconvenience!</b>
+                        <b>Sign-ups for STEMpark are now closed. We apologize for the inconvenience!</b>&nbsp;
+                        If you are enrolled in STEMpark, check your email for more information. Otherwise contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a>
                         <br/>
                         Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to STEMpark 2025!
                     </p>
