@@ -50,7 +50,6 @@ export default function Page() {
                         <li><b>Limited spots available!</b></li>
                     </ul>
                 </Card.Left>
-                {EnrollButton}
                 <Section heading="Explore STEM">
                     <p>The besy way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
                     <p>Parents are welcome to attend to watch the demonstrations.</p>
@@ -67,13 +66,17 @@ export default function Page() {
                     </Card.Norm>
                     <Card.Norm header="Day 4: Astronomy">
                         <p>Look to the sky! After arriving at the park in the late evening, students will get to learn about the phases of the Moon and design their own spacecraft/rockets using criteria from real-world missions. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park! Finally, to end camp, students will get to observe the sun, stars, and potentially some galaxies and nebulae through a telescope and record their observations.</p>
-                        {/* <p>Look to the sky! After arriving at the park in the late evening, students will get to observe the sun, stars, and potentially some galaxies and nebulae through a telescope and record their observations. They'll also get to witness the true scale of our universe by participating in a to-scale demonstration of the Universe's scale that's both out-of-this-world and out-of-this-park!</p> */}
                         <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:00p.m and ends at 9:00p.m, unlike the other days. Please plan accordingly.</p>
                     </Card.Norm>
                 </Section>
                 <Section heading="Sign up today!">
-                    {EnrollButton}
-                   <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p>
+                    {/* {EnrollButton}
+                    <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p> */}
+                    <p className="closed-signup">
+                        <b>Sign-ups for STEMpark are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to STEMpark 2025!
+                    </p>
                 </Section>
             </main>
         </>

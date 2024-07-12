@@ -14,7 +14,7 @@ export default function BioCards({cards}: {cards: Array<BioCardProps>}) {
     for (var card of cards) {
         var titles = card.title.split("; ").map(str => {return <>{str}<br/></>});
         var newCard = (
-            <div className="bio-card">
+            <div className="bio-card" key={card.name + "_bio"}>
                 <img src={card.img ? card.img : "/seal.svg"} alt={`Picture of ${card.name}`} />
                 <p className="bio-card-name">{card.name}</p>
                 <p className="bio-card-title">{titles}</p>

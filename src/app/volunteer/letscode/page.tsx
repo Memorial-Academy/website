@@ -53,7 +53,6 @@ export default function Page() {
                         </ul>
                     </Card.Left>
                     <p>Do you love computer science? Then Let's Code may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students debug code, help them understand new coding concepts, and guide them through unique and interesting projects. Volunteers for Let's Code are expected to be passionate and knowledgable about computer science, and should be excited to share their expertise with the next generation!</p>
-                    {EnrollButton}
                 </Section>
                 <Section heading='Classes'>
                     <Card.Half 
@@ -113,8 +112,13 @@ export default function Page() {
                     />
                 </Section>
                 <Section heading="Join today!">
-                    <p><b>Note:</b> while volunteers are encouraged to request a specific class to volunteer for, the final decision as to which class a volunteer will be assigned to will be based on the skills they provide on their sign-up form.</p>
-                    {EnrollButton}
+                    {/* <p><b>Note:</b> while volunteers are encouraged to request a specific class to volunteer for, the final decision as to which class a volunteer will be assigned to will be based on the skills they provide on their sign-up form.</p>
+                    {EnrollButton} */}
+                    <p className="closed-signup">
+                        <b>Sign-ups for Let's Code volunteering are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still want to volunteer? Check out our <a href="/volunteer">other opportunities</a>, and be on the look out for news relating to Let's Code 2025!
+                    </p>
                 </Section>
             </main>
         </>

@@ -71,7 +71,7 @@ export default function Page() {
                                 "Introduction to Game Development with Scratch",
                                 "Introduction to Web Development"
                             ]} />
-                            {IntroEnrollButton}
+                            {/* {IntroEnrollButton} */}
                         </>
                     } right={
                         <>
@@ -89,9 +89,14 @@ export default function Page() {
                                 <br/>
                                 Absolutely! We scheduled Let's Code to ensure that students can take an introductory class during week one (June 3 - 7) and then take an advanced class for the remaining two weeks (June 10 - 14 & June 17 - 21).
                             </p>
-                            {AdvEnrollButton}
+                            {/* {AdvEnrollButton} */}
                         </>
                     } />
+                    <p className="closed-signup">
+                        <b>Sign-ups for Let's Code are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to Let's Code 2025!
+                    </p>
                     <Card.Norm header='Introduction to Python'>
                         <p>Introduction to Python introduces students to text-based programming using the Python programming language. Students will learn the basics of programming, such as creating a variables, using if-else statements, and common algorithms. Students will leave the class prepared with the skills to participate advanced computer science classes.</p>
                     </Card.Norm>
@@ -133,9 +138,14 @@ export default function Page() {
                     </Card.Norm>
                 </Section>
                <Section heading='Sign up today!'>
-                   {IntroEnrollButton}
+                   {/* {IntroEnrollButton}
                    {AdvEnrollButton}
-                   <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a></p>
+                   <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a></p> */}
+                   <p className="closed-signup">
+                        <b>Sign-ups for Let's Code are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to Let's Code 2025!
+                    </p>
                </Section>
             </main>
         </>

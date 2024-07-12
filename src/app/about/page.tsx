@@ -31,7 +31,7 @@ export default function Page() {
             />
             <main>
                 <Section heading='Our Mission'>
-                    <p>Every student has a different background; the job of a functioning education system is to ensure every student has access to high quality educational opportunities that teach them new skills and prepare them for life after school. To often, our education systems are unable to provide them with these high-quality opportunities. MAST aims to be part of the fix to this problem!</p>
+                    <p>Every student has a different background; the job of a functioning education system is to ensure every student has access to high quality educational opportunities that teach them new skills and prepare them for life after school. To often, our education systems are unable to provide students with these high-quality opportunities. MAST aims to be part of the fix to this problem!</p>
                     <p>The Memorial Academy of Science and Technology was founded to provide free/low-cost summer programs to elementary/middle school students of all backgrounds, with a focus on computer science and STEM programs. It is our belief that in the modern world, these two crucial sectors that captivate the attention of millions of students are inadequately taught in schools, resulting in student's views on these exciting fields being tainted by boring homework assignments and poorly structured curriculums.</p>
                     <p>Our programs are created by experienced high school & university students, dedicated to changing the world by sharing their knowledge and passion with the next generation. We attempt to work side-by-side with school districts, schools, and teachers to compliment their programs and give students every opportunity for success and learning.</p>
                 </Section>
@@ -50,7 +50,7 @@ export default function Page() {
                     <Card.Norm header='2023'>
                         <>
                             <p>
-                                Two sophomores are bought on to Let's Code's executive board, replacing three graduated students. Let's Code continues running it's three introductory classes and sees over 80 students and approximately 15 volunteers.
+                                Two sophomores are bought on to Let's Code's executive board, replacing three graduated students. Let's Code continues running its three introductory classes and sees over 80 students and approximately 15 volunteers.
                             </p>
                             <p>
                                 Meanwhile, another sophomore begins preparing plans for a STEM-based summer camp (simply referred to as "STEM Camp"), and enlists the help of one of Let's Code's president.
