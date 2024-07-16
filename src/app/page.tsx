@@ -7,7 +7,6 @@ import Section from "../components/section";
 export default function Home() {
     return (
         <>
-            <Banner message={"Enroll in STEMpark today!"} link="/stempark" />
             {/* <Banner message={"Support the future of high-quality summer camps; donate today!"} link="/donate" /> */}
             <Header
                 title="Boost your child's learning!"

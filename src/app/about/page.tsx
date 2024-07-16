@@ -78,7 +78,7 @@ export default function Page() {
                             name: "Griffin Ferguson",
                             title: "Board Member & President, MAST; Program Director, Let's Code & STEMpark",
                             img: "/about/griffin.jpg",
-                            bio: "Griffin is a junior at Stratford High School. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal and IT duties related to MAST. Outside of MAST, he is the vice president of Stratford's Computer Science club, runs a coding club at a local community center, participates in speech and debate, and is the lighting director for the Stratford Playhouse. While his interest in computer science involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
+                            bio: "Griffin is a senior at Stratford High School. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal and IT duties related to MAST. Outside of MAST, he is the vice president of Stratford's Computer Science club, runs a coding club at a local community center, participates in speech and debate, and is the lighting director for the Stratford Playhouse. While his interest in computer science involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
                         }, {
                             name: "Devon Schwartz",
                             title: "Board Member, MAST; Co-founder, Let's Code",
@@ -93,22 +93,22 @@ export default function Page() {
                             name: "Isabella Xu",
                             title: "Board Member & Vice President, MAST; Program Director, STEMpark",
                             img: "/about/isabella.jpg",
-                            bio: "Isabella is a junior at the Texas Academy of Mathematics and Science (TAMS). Since a young age, she has been keenly aware of the large disparity in educational opportunities that exists based on economic status. A firm believer of educational equity, she has volunteered/worked for multiple STEM enrichment programs, the most notable one being Let's Code 2022. This eventually prompted her to found STEM Camp (now STEMpark) where she currently holds the position of president. Outside of MAST, Isabella primarily dedicates her time to her research lab at UNT or competitive coding."
+                            bio: "Isabella is a senior at the Texas Academy of Mathematics and Science (TAMS). Since a young age, she has been keenly aware of the large disparity in educational opportunities that exists based on economic status. A firm believer of educational equity, she has volunteered/worked for multiple STEM enrichment programs, the most notable one being Let's Code 2022. This eventually prompted her to found STEM Camp (now STEMpark) where she currently holds the position of president. Outside of MAST, Isabella primarily dedicates her time to her research lab at UNT or competitive coding."
                         }, {
                             name: "Grace Abdelnour",
                             title: "Board Member & Vice President, MAST; Program Director, Let's Code",
                             img: "/about/grace.jpg",
-                            bio: "Grace Abdelnour is a junior at Stratford High School. They have been programming for six years and plan to major in computer science in college. They have previously volunteered at Let;s Code and often help at the Family Point Resources coding club. Outside of school, they enjoy working on personal programming projects and spend their free time either reading or playing chess."
+                            bio: "Grace Abdelnour is a senior at Stratford High School. They have been programming for six years and plan to major in computer science in college. They have previously volunteered at Let;s Code and often help at the Family Point Resources coding club. Outside of school, they enjoy working on personal programming projects and spend their free time either reading or playing chess."
                         }, {
                             name: "Neil Aylor",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/neil.jpg",
-                            bio: "Neil Aylor is a former senior at Stratford High School. He is now a sophomore at Texas A&M majoring in computer science and has been programming for nine years. He is the former president of the Stratford Chess Club and Stratford Computer Science Club."
+                            bio: "Neil Aylor is a former senior at Stratford High School. He is now a junior at Texas A&M majoring in computer science and has been programming for nine years. He is the former president of the Stratford Chess Club and Stratford Computer Science Club."
                         }, {
                             name: "Jean Hoang",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/jean.jpg",
-                            bio: "Jean Hoang is a freshman at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
+                            bio: "Jean Hoang is a sophomore at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
                         }
                     ]} />
                 </Section>

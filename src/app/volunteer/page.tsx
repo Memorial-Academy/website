@@ -33,6 +33,7 @@ export default function Page() {
             <main>
                 <Section heading="Join our team!">
                     <p>MAST relies on passionate, experienced volunteers to assist in running its programs. Volunteering for MAST is an incredible experience; while you develop leadership, social, and teaching skills, you're helping and empowering students to learn new skills and unlock potential they may have previously never known they had.</p>
+                    <p><b>At this time, we are not looking for volunteers.</b> Signups for our Summer 2024 programs have closed, and we are now in the process of planning next year's programs. If you have a specific inquiry regarding working with our organization as a volunteer, please contact <a href="mailto:volunteer@memorialacademy.org">volunteer@memorialacademy.org</a>.</p>
                     <Card.Half 
                         left={
                             <Enroll link='/volunteer/letscode' text="Volunteer for Let's Code"/>
