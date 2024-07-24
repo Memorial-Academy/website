@@ -28,7 +28,7 @@ footer a:hover, footer a:visited:hover {
     text-wrap: nowrap;
 }
 
-.footer-wrapper img {
+.footer-wrapper img.footer-logo {
     width: 10em;
 }
 
@@ -39,6 +39,10 @@ footer a:hover, footer a:visited:hover {
 .footer-copyright {
     font-size: 0.8rem;
     text-align: center;
+}
+
+.footer-contact-link img {
+    height: 2ch;
 }
 
 @media screen and (max-width: 880px) {
