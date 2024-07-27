@@ -43,6 +43,7 @@ footer a:hover, footer a:visited:hover {
 
 .footer-contact-link img {
     height: 2ch;
+    padding-right: 0.8ch;
 }
 
 @media screen and (max-width: 880px) {

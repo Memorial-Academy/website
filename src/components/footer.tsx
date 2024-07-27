@@ -41,7 +41,7 @@ function SocialLink({link, service, label, image}: {link: string, service: strin
     return (<p>
         <a href={link} className="footer-contact-link" target="_blank">
             <img src={image} alt={service} />
-            <span>: {label}</span>
+            <span>{label}</span>
         </a>
     </p>)
 }
