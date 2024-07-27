@@ -8,7 +8,7 @@ export default function Nav() {
     }
 
     function closeHamburgerMenu() {
-        document.getElementById("nav-right")!.style.right = "-100%";
+        document.getElementById("nav-right")!.style.right = "-110%";
     }
 
     return (
@@ -24,8 +24,6 @@ export default function Nav() {
                     <a href="/letscode" className="program-link">Let's Code</a>
                     <span>|</span>
                     <a href="/stempark" className="program-link">STEMpark</a>
-                    {/* <span>|</span>
-                    <a href="/donate">Donate</a> */}
                     <span>|</span>
                     <a href="/volunteer">Volunteer</a>
                     {/* <NavSubsection
@@ -37,6 +35,8 @@ export default function Nav() {
                     /> */}
                     <span>|</span>
                     <a href="/about">About</a>
+                    <span>|</span>
+                    <a href="/donate">Donate</a>
                 </div>
                 <div id="nav-hamburger-icon" onClick={openHambugerMenu} >
                     <svg viewBox="0 0 6 6">
