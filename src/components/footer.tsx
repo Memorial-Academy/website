@@ -20,6 +20,12 @@ export default function Footer() {
                         label="@memorial__academy"
                         image="/glyphs/instagram.svg"
                     />
+                    <SocialLink
+                        link="https://github.com/Memorial-Academy/"
+                        service="GitHub"
+                        label="Memorial-Academy"
+                        image="/glyphs/github.svg"
+                    />
                 </div>
                 <div>
                     <p><b>Programs</b></p>
@@ -38,7 +44,7 @@ export default function Footer() {
 }
 
 function SocialLink({link, service, label, image}: {link: string, service: string, label: string, image: string}) {
-    return (<p>
+    return (<p title={service} >
         <a href={link} className="footer-contact-link" target="_blank">
             <img src={image} alt={service} />
             <span>{label}</span>
