@@ -21,13 +21,14 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
+const IntroEnrollButton = <Enroll text="Enroll in Introductory Classes" link="https://cloud.memorialacademy.org/apps/forms/s/SBXyemr9kjGEtg7WLBwtF8aj" />
+const AdvEnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
 
 export default function Page() {
     return (
         <>
             <Header
-                title="Let's Code 2025"
+                title="Let's Code"
                 tagline="Computer science summer camp with real world tools and skills for grades 5-8"
                 background="var(--lets-code-gradient)"
                 font="Kode Mono"
@@ -38,8 +39,9 @@ export default function Page() {
                         <li>
                             <b>Dates:</b>
                             <ul>
-                                <li>Week 1: June 9 - 13</li>
-                                <li>Week 2: June 16 - 19</li>
+                                <li>Week 1: June 3 - 7</li>
+                                <li>Week 2: June 10 - 14</li>
+                                <li>Week 3: June 17 - 21</li>
                             </ul>
                         </li>
                         <li>
@@ -55,14 +57,46 @@ export default function Page() {
                     </ul>
                 </Card.Left>
                 <Section heading='Classes'>
-                    <p>Our introductory classes are one-week classes that introduce students to the basics of computer science and programming. They're perfect for absolute beginners, student coders looking to refine their skills, and all other students ready to become a computer scientist!</p>
-                    <p>
-                        <b>New for 2025: brand new curriculums!</b>&nbsp;
-                        We've redesigned all of our introductory curriculums to provide the most comprehensive and high-quality learning experience possible.
-                        Whether you're a new student or a returning student, we've got new and exciting things to share with you!
+                    <Card.Half left={
+                        <>
+                            <h4>Introductory Classes</h4>
+                            <p>Introductory classes are one-week classes that introduce students to the basics of computer science and programming. They assume zero prior knowledge and provide students a simple introduction to real-world tools and techniques.</p>
+                            <BulletList title='When do these classes take place?' points={[
+                                "Session 1: June 3 - 7",
+                                "Session 2: June 10 - 14",
+                                "Session 3: June 17 - 21"
+                            ]} />
+                            <BulletList title='Which classes are "introductory classes"?' points={[
+                                "Introduction to Python",
+                                "Introduction to Game Development with Scratch",
+                                "Introduction to Web Development"
+                            ]} />
+                            {/* {IntroEnrollButton} */}
+                        </>
+                    } right={
+                        <>
+                            <h4>Advanced Classes</h4>
+                            <p>Advanced classes are two-week long classes that build off the existing skills of students (such as the skills they learnt at a Let's Code Introductory Class). These classes focus on teaching students how to take their skills and apply them to a computer science profession. Students will expand on their existing knowledge to learn complex topics and build advanced applications.</p>
+                            <BulletList title='When do these classes take place?' points={[
+                                "Session 1: June 10 - 14 & June 17 - 21"
+                            ]} />
+                            <BulletList title='Which classes are "advanced classes classes"?' points={[
+                                "Advanced Programming with Python",
+                                "Advanced Web Development"
+                            ]} />
+                            <p>
+                                <b>Can my student take an introductory class and an advanced class in the same year?</b>
+                                <br/>
+                                Absolutely! We scheduled Let's Code to ensure that students can take an introductory class during week one (June 3 - 7) and then take an advanced class for the remaining two weeks (June 10 - 14 & June 17 - 21).
+                            </p>
+                            {/* {AdvEnrollButton} */}
+                        </>
+                    } />
+                    <p className="closed-signup">
+                        <b>Sign-ups for Let's Code are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to Let's Code 2025!
                     </p>
-                    <SignupNotice/>
-
                     <Card.Norm header='Introduction to Python'>
                         <p>Introduction to Python introduces students to text-based programming using the Python programming language. Students will learn the basics of programming, such as creating a variables, using if-else statements, and common algorithms. Students will leave the class prepared with the skills to participate advanced computer science classes.</p>
                     </Card.Norm>
@@ -72,12 +106,22 @@ export default function Page() {
                     <Card.Norm header='Introduction to Web Development'>
                         <p>Introduction to Web Development teaches students the basic of developing a website, offering them an introduction to a variety of programming concepts (ranging from user-interface designing to the similar text-based programming concepts seen in Introduction to Python). Students will start by creating simple text-only webpages to and finish with professionally-styled multi-page websites with extensive functionality.</p>
                     </Card.Norm>
-                    <br/>
-                    <p>
-                        <b>What happened to the advanced classes?</b>
-                        <br/>
-                        Last year, we introduced two new advanced classes. For summer 2025, we're pausing these programs to ensure we can provide a few incredible classes with brand new activities to all students instead of hosting a lot of "good" classes.
-                    </p>
+                    <Card.Norm header="Advanced Programming with Python">
+                        <p>
+                            Advanced Programming with Python builds off of a student's pre-existing coding knowledge, introducing them to complex, high-level programming concepts. Students will learn data strucutres, complex programming paradigms (such as object-oriented programming), and other skills necessary to make complex applications.
+                        </p>
+                        <p>
+                            Note: pre-requisite programming knowledge required (Introduction to Python or a school-taught "fundamentals of computer science" course is sufficient)
+                        </p>
+                    </Card.Norm>
+                    <Card.Norm header="Advanced Web Development">
+                        <p>
+                            Advanced Web Development is our most encompassing class, with students designing user interfaces, programming functionality for users, writing software to run on servers, and connecting it all together via the internet! Building off of the concepts covered in Introduction to Web Development, students will start by creating simple web-applications, before combining them with server-side applications to add extra functionality, ranging from authenticating users to creating messaging applications.
+                        </p>
+                        <p>
+                            Note: pre-requisite programming and web-development (specifically front-end web development) knowledge required (Introduction to Web Development is highly recommended, although most school-taught courses will provide a sufficient introduction)
+                        </p>
+                    </Card.Norm>
                 </Section>
                 <Section heading="The Let's Code Experience">
                     <Card.Image src="/lets_code_img/whiteboard1.jpg" alt={"\"Let's Code\" written on a whiteboard"}/>
@@ -97,17 +141,13 @@ export default function Page() {
                    {/* {IntroEnrollButton}
                    {AdvEnrollButton}
                    <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a></p> */}
-                   <SignupNotice/>
+                   <p className="closed-signup">
+                        <b>Sign-ups for Let's Code are now closed. We apologize for the inconvenience!</b>
+                        <br/>
+                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to Let's Code 2025!
+                    </p>
                </Section>
             </main>
         </>
     );
-}
-
-function SignupNotice() {
-    return (
-        <p className="closed-signup">
-            <b>Get ready for a week of fun coding adventures!</b> Signups open on April 27!
-        </p>
-    )
 }
