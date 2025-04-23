@@ -3,7 +3,6 @@ import Header from "../../components/header";
 import Card from '../../components/card';
 import Enroll from '../../components/enroll';
 import Section from '../../components/section';
-import Banner from '@/src/components/banner';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
@@ -26,9 +25,8 @@ const EnrollButton = <Enroll text="Enroll in STEMpark!" link="https://cloud.memo
 export default function Page() {
     return (
         <>
-            {/* <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" /> */}
             <Header
-                title="STEMpark"
+                title="STEMpark 2025"
                 tagline="STEM-centered demonstrations and activities for grades two through eight, hosted live in a park"
                 background="var(--stem-venture-gradient)"
                 font="Architects Daughter"
@@ -36,23 +34,24 @@ export default function Page() {
             <main>
                 <Card.Left image="/stempark.svg || STEMpark logo" header="Details">
                     <ul>
-                        <li><b>Dates:</b> July 22 - 25</li>
+                        <li><b>Dates:</b> July 7 - 10</li>
                         <li>
                             <b>Times:</b>
                             <ul>
-                                <li>July 22 - 24: 11:30a.m - 2:30p.m</li>
-                                <li>July 25: 6:00p.m - 9:00p.m</li>
+                                <li>July 7 - 9: 11:30a.m - 2:30p.m</li>
+                                <li>July 10: 6:00p.m - 9:00p.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
                         <li><b>Cost:</b> Free</li>
                         <li>Parents and unenrolled students are welcome to watch demonstrations!</li>
-                        <li><b>Limited spots available!</b></li>
+                        {/* <li><b>Limited spots available!</b></li> */}
                     </ul>
                 </Card.Left>
-                <Section heading="Explore STEM">
-                    <p>The besy way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
+                <Section heading="Explore STEM the fun way!">
+                    <p>The best way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
                     <p>Parents are welcome to attend to watch the demonstrations.</p>
+                    <SignupInfo />
                 </Section>
                 <Section heading='Day-by-Day'>
                     <Card.Norm header='Day 1: Engineering'>
@@ -72,14 +71,17 @@ export default function Page() {
                 <Section heading="Sign up today!">
                     {/* {EnrollButton}
                     <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p> */}
-                    <p className="closed-signup">
-                        <b>Sign-ups for STEMpark are now closed. We apologize for the inconvenience!</b>&nbsp;
-                        If you are enrolled in STEMpark, check your email for more information. Otherwise contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a>
-                        <br/>
-                        Still interested? Check out our <a href="/">other programs</a>, and be on the look out for news relating to STEMpark 2025!
-                    </p>
+                    <SignupInfo />
                 </Section>
             </main>
         </>
     );
+}
+
+function SignupInfo() {
+    return (
+        <p>
+            <b>The land of science awaits you!</b> Signups open on April 27!
+        </p>
+    )
 }
