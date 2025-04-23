@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../styles/card.css";
 import React from "react";
 
@@ -60,6 +61,6 @@ export default Card;
 
 export function LearnMore({link}: {link: string}) {
     return (
-        <p className="learn-more"><a href={link}>Learn more</a></p>
+        <p className="learn-more"><Link href={link}>Learn more</Link></p>
     )
 }

@@ -1,6 +1,7 @@
 "use client";
 import "../styles/nav.css";
 import React from "react";
+import Link from "next/link";
 
 export default function Nav() {
     function openHambugerMenu() {
@@ -20,12 +21,12 @@ export default function Nav() {
                 </a>
                 <div id="nav-right">
                     <p id="nav-hamburger-close" onClick={closeHamburgerMenu}><b>X</b> Close</p>
-                    <a href="/" className="program-link">Home</a>
-                    <a href="/letscode" className="program-link">Let's Code</a>
+                    <Link href="/" className="program-link">Home</Link>
+                    <Link href="/letscode" className="program-link">Let's Code</Link>
                     <span>|</span>
-                    <a href="/stempark" className="program-link">STEMpark</a>
+                    <Link href="/stempark" className="program-link">STEMpark</Link>
                     <span>|</span>
-                    <a href="/volunteer">Volunteer</a>
+                    <Link href="/volunteer">Volunteer</Link>
                     {/* <NavSubsection
                         parent={["Volunteer", "/volunteer"]}
                         links={[
@@ -34,9 +35,9 @@ export default function Nav() {
                         ]}
                     /> */}
                     <span>|</span>
-                    <a href="/about">About</a>
+                    <Link href="/about">About</Link>
                     <span>|</span>
-                    <a href="/donate">Donate</a>
+                    <Link href="/donate">Donate</Link>
                 </div>
                 <div id="nav-hamburger-icon" onClick={openHambugerMenu} >
                     <svg viewBox="0 0 6 6">

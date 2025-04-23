@@ -1,4 +1,5 @@
 import "@/src/styles/footer.css";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -6,8 +7,10 @@ export default function Footer() {
             <div className="footer-wrapper">
                 <img className="footer-logo" src="/logo.svg" alt="MAST seal" />
                 <div className="footer-main">
-                    <p className="footer-title"><a href="/"><b>Memorial Academy of Science and Technology</b></a></p>
-                    <p><a href="/about">About Us</a></p>
+                    <p className="footer-title">
+                        <Link href="/"><b>Memorial Academy of Science and Technology</b></Link>
+                    </p>
+                    <p><Link href="/about">About Us</Link></p>
                     <SocialLink 
                         link="mailto:hello@memorialacademy.org"
                         service="Email"
@@ -29,13 +32,13 @@ export default function Footer() {
                 </div>
                 <div>
                     <p><b>Programs</b></p>
-                    <p><a href="/letscode">Let's Code</a></p>
-                    <p><a href="/stempark">STEMpark</a></p>
+                    <p><Link href="/letscode">Let's Code</Link></p>
+                    <p><Link href="/stempark">STEMpark</Link></p>
                 </div>
                 <div>
-                    <p><a href="/volunteer"><b>Volunteer</b></a></p>
-                    <p><a href="/volunteer/letscode">Volunteer at Let's Code</a></p>
-                    <p><a href="/volunteer/stempark">Volunteer at STEMpark</a></p>
+                    <p><Link href="/volunteer"><b>Volunteer</b></Link></p>
+                    <p><Link href="/volunteer/letscode">Volunteer at Let's Code</Link></p>
+                    <p><Link href="/volunteer/stempark">Volunteer at STEMpark</Link></p>
                 </div>
             </div>
             <p className="footer-copyright">Memorial Academy of Science and Technology &copy; 2025</p>
