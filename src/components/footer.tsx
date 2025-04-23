@@ -38,16 +38,18 @@ export default function Footer() {
                     <p><a href="/volunteer/stempark">Volunteer at STEMpark</a></p>
                 </div>
             </div>
-            <p className="footer-copyright">Memorial Academy of Science and Technology &copy; 2024</p>
+            <p className="footer-copyright">Memorial Academy of Science and Technology &copy; 2025</p>
         </footer>
     )
 }
 
 function SocialLink({link, service, label, image}: {link: string, service: string, label: string, image: string}) {
-    return (<p title={service} >
-        <a href={link} className="footer-contact-link" target="_blank">
-            <img src={image} alt={service} />
-            <span>{label}</span>
-        </a>
-    </p>)
+    return (
+        <p title={service} >
+            <a href={link} className="footer-contact-link" target="_blank">
+                <img src={image} alt={service} />
+                <span>{label}</span>
+            </a>
+        </p>
+    )
 }
