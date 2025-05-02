@@ -8,6 +8,11 @@ type CardParams = {
     header: string
 }
 
+type ContentCardProps = {
+    left: React.ReactNode, 
+    right: React.ReactNode
+}
+
 const Card = {
     Left: ({children, image, header}: CardParams) => {
         var imageComponents = image.split(" || ");
@@ -45,7 +50,7 @@ const Card = {
                 {/* <hr/> */}
             </div>
         )
-    }, Half: ({left, right}: {left: React.ReactNode, right: React.ReactNode}) => {
+    }, Half: ({left, right}: ContentCardProps) => {
         return (
             <div className="card card-half">
                 <div>{left}</div>

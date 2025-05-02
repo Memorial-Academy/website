@@ -1,0 +1,19 @@
+.image-slideshow {
+    /* position: relative; */
+    max-width: 80%;
+    margin: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.image-slideshow img {
+    width: 100%;
+    transition: opacity 1s;
+    height: auto;
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.image-slideshow img.active-image {
+    opacity: 1;
+}
