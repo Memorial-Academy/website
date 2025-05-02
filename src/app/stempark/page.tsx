@@ -26,7 +26,7 @@ export default function Page() {
     return (
         <>
             <Header
-                title="STEMpark 2025"
+                title="STEMpark"
                 tagline="STEM-centered demonstrations and activities for grades two through eight, hosted live in a park"
                 background="var(--stem-venture-gradient)"
                 font="Architects Daughter"
@@ -42,7 +42,11 @@ export default function Page() {
                                 <li>July 10: 6:00p.m - 9:00p.m</li>
                             </ul>
                         </li>
-                        <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
+                        <li>
+                            <b>Location:</b> Bendwood Elementary Playground (12750 Kimberley Ln, Houston, TX 77024)
+                            <br/>
+                            (next to Bendwood Park)
+                        </li>
                         <li><b>Cost:</b> Free</li>
                         <li>Parents and unenrolled students are welcome to watch demonstrations!</li>
                         {/* <li><b>Limited spots available!</b></li> */}
@@ -80,8 +84,8 @@ export default function Page() {
 
 function SignupInfo() {
     return (
-        <p>
-            <b>The land of science awaits you!</b> Signups open on April 27!
+        <p className="closed-signup">
+            <b>The land of science awaits you!</b> Signups open on May 2!
         </p>
     )
 }

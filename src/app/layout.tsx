@@ -34,7 +34,7 @@ export default function RootLayout({
             <body>
                 <Nav />
                 <Banner 
-                    message="Ready for SUMMER 2025? Check out our offerings today; signups open soon!" 
+                    message="Ready for SUMMER 2025? Check out our offerings today!" 
                     link={"/#programs"} 
                 />
                 {children}

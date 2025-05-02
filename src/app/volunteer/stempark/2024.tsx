@@ -30,27 +30,23 @@ export default function Page() {
             {/* <Banner message='Please be aware dates for STEMpark have changed due to permitting issues!' link="" /> */}
             <Header
                 title="Volunteer at STEMpark"
-                tagline="Help the next generation experience STEM!"
-                background="var(--stem-venture-gradient)"
+                tagline="Help the next generation experience STEM"
+                background="var(--sea-blue-gradient)"
                 font=""
             />
             <main>
                 <Section heading="Volunteer for STEMpark!">
                     <Card.Left image='/stempark.svg' header="Details">
                     <ul>
-                        <li><b>Dates:</b> July 7 - 10</li>
+                        <li><b>Dates:</b> July 22 - 25</li>
                         <li>
                             <b>Times:</b>
                             <ul>
-                                <li>July 7 - 9: 11:30a.m - 2:30p.m</li>
-                                <li>July 10: 6:00p.m - 9:00p.m</li>
+                                <li>July 22 - 24: 11:30a.m - 2:30p.m</li>
+                                <li>July 25: 6:00p.m - 9:00p.m</li>
                             </ul>
                         </li>
-                        <li>
-                            <b>Location:</b> Bendwood Elementary Playground (12750 Kimberley Ln, Houston, TX 77024)
-                            <br/>
-                            (next to Bendwood Park)
-                        </li>
+                        <li><b>Location:</b> Bendwood Park (12700 Kimberley Ln, Houston, TX 77024)</li>
                         <li><b>Limited spots available!</b></li>
                     </ul>
                     </Card.Left>
@@ -77,7 +73,10 @@ export default function Page() {
                 </Section>
                 <Section heading="Join today!">
                     <p className="closed-signup">
-                        <b>Sign-ups open May 2!</b>
+                        <b>Sign-ups for STEMpark volunteering are now closed. We apologize for the inconvenience!</b>&nbsp;
+                        If you are signed up to volunteer at STEMpark, we will be in contact approximately one week before the camp.
+                        <br/>
+                        Still want to volunteer? Check out our <a href="/volunteer">other opportunities</a>, and be on the look out for news relating to STEMpark 2025!
                     </p>
                 </Section>
             </main>

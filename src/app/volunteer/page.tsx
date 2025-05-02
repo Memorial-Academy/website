@@ -61,7 +61,7 @@ export default function Page() {
                     />
                     <Card.Norm header="What are the requirements to be a volunteer?">
                         <ul>
-                            <li>High school student (entering grades 10-12 or graduating)</li>
+                            <li>High school student (entering grades 9-12 or graduating)</li>
                             <li>Experience and passion in the tools/subjects you wish to teach</li>
                             <li>Prior experience working with children/volunteering is preferred</li>
                             <li>Ability to work well in a team and be patient</li>
@@ -79,7 +79,7 @@ export default function Page() {
                             left={
                                 <>
                                     <h4>Let's Code</h4>
-                                    <p>Spread your knowledge and passion for computer science with the next generation!</p>
+                                    <p>Spread your knowledge and passion for computer science with the next generation as they learn to program their dreams!</p>
                                     <LearnMore link='/volunteer/letscode' />
                                 </>
                             }

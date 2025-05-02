@@ -27,8 +27,8 @@ export default function Page() {
     return (
         <>
             <Header
-                title="Let's Code 2025"
-                tagline="Computer science summer camp with real world tools and skills for grades 5-8"
+                title="Let's Code"
+                tagline="Computer science summer camp with real world tools and skills for grades 5-8, with new curriculums for 2025!"
                 background="var(--lets-code-gradient)"
                 font="Kode Mono"
             />
@@ -46,7 +46,7 @@ export default function Page() {
                             <b>Times:</b>
                             <ul>
                                 <li>Monday - Thursday: 10:00a.m - 3:00p.m</li>
-                                <li>Friday: 10:00a.m - 11:30a.m</li>
+                                <li>Friday: 10:00a.m - 12:00p.m</li>
                             </ul>
                         </li>
                         <li><b>Location:</b> Virtual</li>
@@ -72,7 +72,6 @@ export default function Page() {
                     <Card.Norm header='Introduction to Web Development'>
                         <p>Introduction to Web Development teaches students the basic of developing a website, offering them an introduction to a variety of programming concepts (ranging from user-interface designing to the similar text-based programming concepts seen in Introduction to Python). Students will start by creating simple text-only webpages to and finish with professionally-styled multi-page websites with extensive functionality.</p>
                     </Card.Norm>
-                    <br/>
                     <p>
                         <b>What happened to the advanced classes?</b>
                         <br/>
@@ -107,7 +106,7 @@ export default function Page() {
 function SignupNotice() {
     return (
         <p className="closed-signup">
-            <b>Get ready for a week of fun coding adventures!</b> Signups open on April 27!
+            <b>Get ready for a week of fun coding adventures!</b> Signups open on May 2!
         </p>
     )
 }
