@@ -71,6 +71,9 @@ export default function Page() {
                             </p>
                         </>
                     </Card.Right>
+                    <Card.Norm header="2025 and beyond...">
+                        <p>We're just getting started, and we won't stop until students across the country have access to high-quality, no/low cost educational opportunities that open their eyes to the incredible world of STEM!</p>
+                    </Card.Norm>
                 </Section>
                 <Section heading="The Team">
                     <BioCards cards={[
@@ -78,37 +81,32 @@ export default function Page() {
                             name: "Griffin Ferguson",
                             title: "Board Member & President, MAST; Program Director, Let's Code & STEMpark",
                             img: "/about/griffin.jpg",
-                            bio: "Griffin is a senior at Stratford High School. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal, financial, and IT duties related to MAST. Outside of MAST, he is the president of Stratford's Computer Science club, runs a coding club at a local community center, participates in speech and debate, and is the lighting director for the Stratford Playhouse. While his interest in computer science and STEM involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
+                            bio: "Griffin is a freshman at the University of Illinois Urbana-Champaign. He has been working with Let's Code since 2022, and served as President for the 2023 camp. Additionally, he served as co-founder and Vice President of STEM Camp (now STEMpark). In addition to his leadership position, Griffin takes care of the legal, financial, and IT duties related to MAST. Outside of MAST, he was president of Stratford's Computer Science club (in which he oversaw outreach programs with a local community center), participated in speech and debate, and is currently pursuing a degree in technical theatre, where he can apply his computer and engineering skills to tell stories. While his interest in computer science and STEM involves \"a bit of everything,\" his primary focus is on system administration and full-stack web development."
                         }, {
                             name: "Devon Schwartz",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/devon.jpg",
-                            bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford high school. This is what led him to be a co-founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the Family Point Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
+                            bio: "Devon Schwartz was committed to advancing computer science education while he was a student at Stratford High School. This is what led him to be a co-founder of Lets Code Spring Branch in his Junior year of high school. He also served as director of the FamilyPoint Coding Club. He is proud to see all of these programs continue after he graduated high school. Right now, Devon is a student at the University of Texas studying computer science."
                         }, {
                             name: "Jasmine Zeng",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/jasmine.jpg",
                             bio: "Jasmine is an undergraduate business student at Carnegie Mellon University pursuing a Business Administration major, Human Computer Interaction minor, and pre-law path. She is passionate about helping economically disadvantaged students reach their fullest potential."
                         }, {
-                            name: "Isabella Xu",
-                            title: "Board Member & Vice President, MAST; Program Director, STEMpark",
-                            img: "/about/isabella.jpg",
-                            bio: "Isabella is a senior at the Texas Academy of Mathematics and Science (TAMS). Since a young age, she has been keenly aware of the large disparity in educational opportunities that exists based on economic status. A firm believer of educational equity, she has volunteered/worked for multiple STEM enrichment programs, the most notable one being Let's Code 2022. This eventually prompted her to found STEM Camp (now STEMpark) where she currently holds the position of president. Outside of MAST, Isabella primarily dedicates her time to her research lab at UNT or competitive coding."
-                        }, {
                             name: "Grace Abdelnour",
-                            title: "Board Member & Vice President, MAST; Program Director, Let's Code",
+                            title: "Board Member & Vice President, MAST",
                             img: "/about/grace.jpg",
-                            bio: "Grace Abdelnour is a senior at Stratford High School. They have been programming for six years and plan to major in computer science in college. They have previously volunteered at Let;s Code and often help at the Family Point Resources coding club. Outside of school, they enjoy working on personal programming projects and spend their free time either reading or playing chess."
+                            bio: "Grace Abdelnour is a freshman at the University of Southern California. They have been programming for six years and have a major interest in applying technology in creative ways. They have previously volunteered at Let's Code and often helped at the FamilyPoint Resources Coding Club. Outside of school, they enjoy working on personal programming projects and spend their free time either reading or playing chess."
                         }, {
                             name: "Neil Aylor",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/neil.jpg",
-                            bio: "Neil Aylor is a former senior at Stratford High School. He is now a junior at Texas A&M majoring in computer science and has been programming for nine years. He is the former president of the Stratford Chess Club and Stratford Computer Science Club."
+                            bio: "Neil Aylor is a former senior at Stratford High School. He is now a senior at Texas A&M majoring in computer science and has been programming for nine years. He is the former president of the Stratford Chess Club and Stratford Computer Science Club."
                         }, {
                             name: "Jean Hoang",
                             title: "Board Member, MAST; Co-founder, Let's Code",
                             img: "/about/jean.jpg",
-                            bio: "Jean Hoang is a sophomore at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
+                            bio: "Jean Hoang is a junior at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
                         }
                     ]} />
                 </Section>
