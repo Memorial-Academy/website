@@ -29,6 +29,9 @@ export default function Footer() {
                         label="Memorial-Academy"
                         image="/glyphs/github.svg"
                     />
+                    <p>
+                        <Link href="/legal/privacy">Privacy</Link>
+                    </p>
                 </div>
                 <div>
                     <p><b>Programs</b></p>

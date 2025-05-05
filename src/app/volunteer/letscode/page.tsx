@@ -30,7 +30,6 @@ export default function Page() {
                 title="Volunteer at Let's Code"
                 tagline="Help the next generation unlock their computer science skills!"
                 background="var(--lets-code-gradient)"
-                font=""
             />
             <main>
                 <Section heading="Volunteer for Let's Code!">
