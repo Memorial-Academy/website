@@ -24,6 +24,7 @@ footer a:hover, footer a:visited:hover {
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     text-wrap: nowrap;
 }
@@ -53,9 +54,9 @@ footer a:hover, footer a:visited:hover {
     .footer-wrapper {
         gap: 1.5%;
     }
-    .footer-wrapper img {
-        width: 6em;
-    }
+    /* .footer-wrapper img {
+        width: 2rem;
+    } */
     footer p, footer a, footer a:visited {
         font-size: 0.7rem;
     }
@@ -68,10 +69,13 @@ footer a:hover, footer a:visited:hover {
 }
 
 @media screen and (max-width: 650px) {
-    .footer-contact-link span {
-        display: none;
+    .footer-wrapper {
+        flex-wrap: wrap;
     }
-    .footer-wrapper img {
+    .footer-main {
+        flex-basis: 100%;
+    }
+    .footer-logo {
         display:none;
     }
     .footer-wrapper {
