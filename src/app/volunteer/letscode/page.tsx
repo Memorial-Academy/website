@@ -4,6 +4,7 @@ import Enroll from "@/src/components/enroll";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 import BulletList from '@/src/components/list';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Volunteer at Let's Code | Memorial Academy of Science and Technology",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll link="https://cloud.memorialacademy.org/apps/forms/s/EBq8qsBJzZskWqosiEYrEoSt" text="Volunteer for Let's Code!" />
+const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/volunteer/81571b2c0c913ac113ee5749" text="Volunteer for Let's Code!" />
 
 export default function Page() {
     return (
@@ -51,6 +52,7 @@ export default function Page() {
                         </ul>
                     </Card.Left>
                     <p>Do you love computer science? Then Let's Code may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students debug code, help them understand new coding concepts, and guide them through unique and interesting projects. Volunteers for Let's Code are expected to be passionate and knowledgable about computer science, and should be excited to share their expertise with the next generation!</p>
+                    {EnrollButton}
                 </Section>
                 <Section heading='Classes'>
                     <p>
@@ -84,11 +86,10 @@ export default function Page() {
                     ]} />
                 </Section>
                 <Section heading="Join today!">
-                    {/* <p><b>Note:</b> while volunteers are encouraged to request a specific class to volunteer for, the final decision as to which class a volunteer will be assigned to will be based on the skills they provide on their sign-up form.</p>
-                    {EnrollButton} */}
-                    <p className="closed-signup">
-                        <b>Sign-ups open May 2!</b>
-                    </p>
+                    <p><b>Note:</b> while volunteers are encouraged to request a specific class to volunteer for, the final decision as to which class a volunteer will be assigned to will be based on the skills they provide on their sign-up form.</p>
+                    {EnrollButton}
+                    <p>We're managing signups with <a href="https://my.memorialacademy.org">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>
+                    <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a>.</p>
                 </Section>
             </main>
         </>

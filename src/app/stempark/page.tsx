@@ -4,6 +4,7 @@ import Card from '../../components/card';
 import Enroll from '../../components/enroll';
 import Section from '../../components/section';
 import ImageSlideshow from '@/src/components/image_slideshow';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "STEMpark | Memorial Academy of Science and Technology",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll text="Enroll in STEMpark!" link="https://cloud.memorialacademy.org/apps/forms/s/bt7KKCwSammaxo3FyzBX94io" />
+const EnrollButton = <Enroll text="Enroll today!" link="https://my.memorialacademy.org/programs/enroll/40e41e46d3116e536ed595b1" />
 
 export default function Page() {
     return (
@@ -50,13 +51,12 @@ export default function Page() {
                         </li>
                         <li><b>Cost:</b> Free</li>
                         <li>Parents and unenrolled students are welcome to watch demonstrations!</li>
-                        {/* <li><b>Limited spots available!</b></li> */}
                     </ul>
                 </Card.Left>
                 <Section heading="Explore STEM the fun way!">
                     <p>The best way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
                     <p>Parents are welcome to attend to watch the demonstrations.</p>
-                    <SignupInfo />
+                    {EnrollButton}
                 </Section>
                 <Section heading='Day-by-Day'>
                     <Card.Half 
@@ -123,19 +123,12 @@ export default function Page() {
                     />
                 </Section>
                 <Section heading="Sign up today!">
-                    {/* {EnrollButton}
-                    <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p> */}
-                    <SignupInfo />
+                    {EnrollButton}
+                    <p>We're managing signups with <a href="https://my.memorialacademy.org">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>
+                    <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p>
+                    <p>Note: STEMpark is not endorsed nor sponsored by Spring Branch Independent School District or Bendwood Elementary School.</p>
                 </Section>
             </main>
         </>
     );
-}
-
-function SignupInfo() {
-    return (
-        <p className="closed-signup">
-            <b>The land of science awaits you!</b> Signups open on May 2!
-        </p>
-    )
 }

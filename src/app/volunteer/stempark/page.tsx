@@ -3,8 +3,7 @@ import Card from "@/src/components/card";
 import Enroll from "@/src/components/enroll";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
-import BulletList from '@/src/components/list';
-import Banner from '@/src/components/banner';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Volunteer at STEMpark | Memorial Academy of Science and Technology",
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll link="https://cloud.memorialacademy.org/apps/forms/s/rYBBCE7kFbNtet56rJgAeweA" text="Volunteer at STEMpark" />
+const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/volunteer/40e41e46d3116e536ed595b1" text="Volunteer at STEMpark" />
 
 export default function Page() {
     return (
@@ -55,6 +54,7 @@ export default function Page() {
                     </ul>
                     </Card.Left>
                     <p>Do you love STEM? Then STEMpark may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students complete experiements and build fun projects, help them understand new and interesting concepts, and serve as a guide for students as they expand their knowledge, problem-solving ability, and creative skills. Volunteers for STEMpark are expected to have an interest in STEM and have a good problem-solving ability, and should be excited to share their knowledge with the next generation.</p>
+                    {EnrollButton}
                 </Section>
                 <Section heading='The Job of a Volunteer'>
                     <p>STEMpark focuses primarily on three areas of STEM: engineering, life sciences, natural sciences, and astronomy. Volunteers will be tasked with supervising students to ensure they stay safe and do not wander off, in addition to assisting in facilitating experiements and demonstrations</p>
@@ -76,9 +76,10 @@ export default function Page() {
                     </Card.Norm>
                 </Section>
                 <Section heading="Join today!">
-                    <p className="closed-signup">
-                        <b>Sign-ups open May 2!</b>
-                    </p>
+                    {EnrollButton}
+                    <p>We're managing signups with <a href="https://my.memorialacademy.org/">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>
+                    <p>Questions? Concerns? Contact <a href="mailto:stempark@memorialacademy.org">stempark@memorialacademy.org</a></p>
+                    <p>Note: STEMpark is not endorsed nor sponsored by Spring Branch Independent School District or Bendwood Elementary School.</p>
                 </Section>
             </main>
         </>

@@ -4,6 +4,7 @@ import Card from "../../components/card";
 import Section from "../../components/section";
 import Enroll from '../../components/enroll';
 import BulletList from '@/src/components/list';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Let's Code | Memorial Academy of Science and Technology",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
+const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/enroll/81571b2c0c913ac113ee5749" text="Enroll today!" />
 
 export default function Page() {
     return (
@@ -61,7 +62,7 @@ export default function Page() {
                         We've redesigned all of our introductory curriculums to provide the most comprehensive and high-quality learning experience possible.
                         Whether you're a new student or a returning student, we've got new and exciting things to share with you!
                     </p>
-                    <SignupNotice/>
+                    {EnrollButton}
 
                     <Card.Norm header='Introduction to Python'>
                         <p>Introduction to Python introduces students to text-based programming using the Python programming language. Students will learn the basics of programming, such as creating a variables, using if-else statements, and common algorithms. Students will leave the class prepared with the skills to participate advanced computer science classes.</p>
@@ -80,7 +81,7 @@ export default function Page() {
                 </Section>
                 <Section heading="The Let's Code Experience">
                     <Card.Image src="/lets_code_img/whiteboard1.jpg" alt={"\"Let's Code\" written on a whiteboard"}/>
-                    <Card.Norm header='A Normal Day'>
+                    <Card.Norm header='A Normal Day (Monday - Thursday)'>
                         <h5>Morning Activities (10:00a.m - 12:00p.m)</h5>
                         <p>Students arrive and start the day with a lesson covering a new computer science topic. Students will get to participate in interactive, hands-on demonstrations as their instructors provide extensive insight. After the lesson finishes, students are tasked to demonstrate their newly learned skills via a self-guided projected.</p>
                         <h5>Lunch & Office hours (12:00p.m - 1:00p.m)</h5>
@@ -88,25 +89,16 @@ export default function Page() {
                         <h5>Afternoon Activities (1:00p.m - 3:00p.m)</h5>
                         <p>Instructors introduce a new lesson, expanding on the topics covered that morning. Students will then be able to create a new project to practice their expanded skillset, or build off of their morning project to add additional functionality.</p>
                     </Card.Norm>
-                    <Card.Norm header='Capstone Project'>
+                    <Card.Norm header='Capstone Project (Friday)'>
                         <p>At the conclusion of each class, students will work in a small team or by themselves to create a project showcasing all the skills they learned while at camp. These projects have no prompt and are entirely imagined and created by the student! They'll receive the entirety of Thursday's camp to work on these projects, with Friday's short session being used to present these projects to classmates. Family members are welcome to join!</p>
                     </Card.Norm>
                 </Section>
                <Section heading='Sign up today!'>
-                   {/* {IntroEnrollButton}
-                   {AdvEnrollButton}
-                   <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a></p> */}
-                   <SignupNotice/>
+                    {EnrollButton}
+                    <p>We're managing signups with <a href="https://my.memorialacademy.org">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>
+                    <p>Questions? Concerns? Contact <a href="mailto:letscode@memorialacademy.org">letscode@memorialacademy.org</a>.</p>
                </Section>
             </main>
         </>
     );
-}
-
-function SignupNotice() {
-    return (
-        <p className="closed-signup">
-            <b>Get ready for a week of fun coding adventures!</b> Signups open on May 2!
-        </p>
-    )
 }
