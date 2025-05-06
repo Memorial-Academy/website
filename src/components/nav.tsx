@@ -1,16 +1,12 @@
 "use client";
 import "../styles/nav.css";
-import React from "react";
+import React, { Dispatch, SetStateAction, useContext, useState, createContext } from "react";
 import Link from "next/link";
 
-export default function Nav() {
-    function openHambugerMenu() {
-        document.getElementById("nav-right")!.style.right = "0";
-    }
+const MobileNavState = createContext<Dispatch<SetStateAction<boolean>> | undefined>(undefined);
 
-    function closeHamburgerMenu() {
-        document.getElementById("nav-right")!.style.right = "-110%";
-    }
+export default function Nav() {
+    const [mobileNavActive, setMobileNavActive] = useState(false);
 
     return (
         <>
@@ -19,27 +15,48 @@ export default function Nav() {
                     <img src="/seal.svg" alt="MAST seal"></img>
                     <h1>Memorial Academy of<br/>Science and Technology</h1>
                 </a>
-                <div id="nav-right">
-                    <p id="nav-hamburger-close" onClick={closeHamburgerMenu}><b>X</b> Close</p>
-                    <Link href="/" className="program-link">Home</Link>
-                    <Link href="/letscode" className="program-link">Let's Code</Link>
-                    <span>|</span>
-                    <Link href="/stempark" className="program-link">STEMpark</Link>
-                    <span>|</span>
-                    <Link href="/volunteer">Volunteer</Link>
-                    {/* <NavSubsection
-                        parent={["Volunteer", "/volunteer"]}
-                        links={[
-                            ["Let's Code", "/volunteer/letscode"],
-                            ["STEMpark", "/volunteer/stempark"],
-                        ]}
-                    /> */}
-                    <span>|</span>
-                    <Link href="/about">About</Link>
-                    <span>|</span>
-                    <Link href="/donate">Donate</Link>
+                <div id="nav-right" onClick={() => setMobileNavActive(false)} style={{right: (mobileNavActive ? "0" : "-110%")}}>
+                    <p id="nav-hamburger-close" onClick={() => setMobileNavActive(false)}><b>X</b> Close</p>
+                    <MobileNavState.Provider value={setMobileNavActive}>
+                        <NavLink
+                            link="/"
+                            text="Home"
+                            last
+                            programLink
+                        />
+                        <NavLink
+                            link="/letscode"
+                            text="Let's Code"
+                            programLink
+                        />
+                        <NavLink
+                            link="/stempark"
+                            text="STEMpark"
+                            programLink
+                        />
+                        <NavLink
+                            link="/volunteer"
+                            text="Volunteer"
+                        />
+                        {/* <NavSubsection
+                            parent={["Volunteer", "/volunteer"]}
+                            links={[
+                                ["Let's Code", "/volunteer/letscode"],
+                                ["STEMpark", "/volunteer/stempark"],
+                            ]}
+                        /> */}
+                        <NavLink
+                            link="/about"
+                            text="About"
+                        />
+                        <NavLink
+                            link="/donate"
+                            text="Donate"
+                            last
+                        />
+                    </MobileNavState.Provider>
                 </div>
-                <div id="nav-hamburger-icon" onClick={openHambugerMenu} >
+                <div id="nav-hamburger-icon" onClick={() => setMobileNavActive(true)} >
                     <svg viewBox="0 0 6 6">
                         <path d="M0 1 l6 0 M0 3 l6 0 M0 5 l6 0" stroke="var(--text-black)" strokeWidth="1" />
                     </svg>
@@ -47,6 +64,27 @@ export default function Nav() {
             </nav>
         </>
     )
+}
+
+type NavLinkProps = {
+    link: string,
+    text: string,
+    last?: boolean,
+    programLink?: boolean,
+}
+
+function NavLink ({link, text, last, programLink}: NavLinkProps) {
+    const setMobileNavActive = useContext(MobileNavState);
+    return <>
+        <Link 
+            href={link}
+            onClick={() => {
+                if (setMobileNavActive) setMobileNavActive(false);
+            }}
+            className={programLink ? "program-link" : ""}
+        >{text}</Link>
+        {!last && <span>|</span>}
+    </>
 }
 
 function NavSubsection({parent, links}: {parent: Array<string>, links: Array<Array<string>>}) {
