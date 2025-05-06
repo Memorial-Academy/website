@@ -9,7 +9,7 @@
     border-bottom: 2px solid black;
 }
 
-.banner a, .banner span {
+.banner a, .banner a:visited, .banner span {
     display: inline-block;
     width: 100vw;
     color: var(--text-black);
