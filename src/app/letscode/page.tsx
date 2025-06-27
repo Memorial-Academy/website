@@ -56,7 +56,7 @@ export default function Page() {
                     </ul>
                 </Card.Left>
                 <Section heading='Classes'>
-                    <p>Our introductory classes are one-week classes that introduce students to the basics of computer science and programming. They're perfect for absolute beginners, student coders looking to refine their skills, and all other students ready to become a computer scientist!</p>
+                    <p>Our introductory classes are one-week long classes that introduce students to the basics of computer science and programming. They're perfect for absolute beginners, student coders looking to refine their skills, and all other students ready to become a computer scientist!</p>
                     <p>
                         <b>New for 2025: brand new curriculums!</b>&nbsp;
                         We've redesigned all of our introductory curriculums to provide the most comprehensive and high-quality learning experience possible.
@@ -65,13 +65,13 @@ export default function Page() {
                     {EnrollButton}
 
                     <Card.Norm header='Introduction to Python'>
-                        <p>Introduction to Python introduces students to text-based programming using the Python programming language. Students will learn the basics of programming, such as creating a variables, using if-else statements, and common algorithms. Students will leave the class prepared with the skills to participate advanced computer science classes.</p>
+                        <p>Introduction to Python introduces students to text-based programming using the Python programming language. Students will learn the basics of programming, such as creating a variables, using if-else statements, and common algorithms. Students will leave the class prepared with the skills to participate in advanced computer science classes.</p>
                     </Card.Norm>
                     <Card.Norm header='Introduction to Game Development with Scratch'>
                         <p>Introduction to Game Development is our most introductory class, offering students an introduction to both general programming concepts and game development. Students will use Scratch's block-based programming language to create their own apps and 2D games.</p>
                     </Card.Norm>
                     <Card.Norm header='Introduction to Web Development'>
-                        <p>Introduction to Web Development teaches students the basic of developing a website, offering them an introduction to a variety of programming concepts (ranging from user-interface designing to the similar text-based programming concepts seen in Introduction to Python). Students will start by creating simple text-only webpages to and finish with professionally-styled multi-page websites with extensive functionality.</p>
+                        <p>Introduction to Web Development teaches students the basic of developing a website, offering them an introduction to a variety of programming concepts (ranging from user-interface designing to the similar text-based programming concepts seen in Introduction to Python). Students will start by creating simple text-only webpages and finish with professionally-styled multi-page websites with extensive functionality.</p>
                     </Card.Norm>
                     <p>
                         <b>What happened to the advanced classes?</b>

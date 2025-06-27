@@ -54,7 +54,7 @@ export default function Page() {
                     </ul>
                 </Card.Left>
                 <Section heading="Explore STEM the fun way!">
-                    <p>The best way to learn about STEM is in the real world. STEMpark uses fun hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
+                    <p>The best way to learn about STEM is in the real world. STEMpark uses fun, hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>
                     <p>Parents are welcome to attend to watch the demonstrations.</p>
                     {EnrollButton}
                 </Section>
@@ -63,7 +63,7 @@ export default function Page() {
                         left={
                             <>
                                 <h4>Day 1: Engineering</h4>
-                                <p>Engineering Day will kick off the camp with demonstrations over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will then participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
+                                <p>Engineering Day will kick off the camp with demonstrations over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will get to work on and participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
                             </>
                         }
                         right={
@@ -85,7 +85,7 @@ export default function Page() {
                         right={
                             <>
                                 <h4>Day 2: Natural Sciences</h4>
-                                <p>Day Three is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to seeing the water cycle unfold in real-time.</p>
+                                <p>Natural Sciences Day is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to seeing the water cycle unfold in real-time.</p>
                             </>
                         }
                     />

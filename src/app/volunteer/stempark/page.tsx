@@ -53,7 +53,10 @@ export default function Page() {
                         <li><b>Limited spots available!</b></li>
                     </ul>
                     </Card.Left>
-                    <p>Do you love STEM? Then STEMpark may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students complete experiements and build fun projects, help them understand new and interesting concepts, and serve as a guide for students as they expand their knowledge, problem-solving ability, and creative skills. Volunteers for STEMpark are expected to have an interest in STEM and have a good problem-solving ability, and should be excited to share their knowledge with the next generation.</p>
+                    <p>
+                        Do you love STEM? Then STEMpark may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students complete experiements and build fun projects, help them understand new and interesting concepts, and serve as a guide for students as they expand their knowledge, problem-solving ability, and creative skills. 
+                        Volunteers for STEMpark are expected to have an interest in STEM and have a good problem-solving ability, and should be excited to share their knowledge with the next generation.
+                    </p>
                     {EnrollButton}
                 </Section>
                 <Section heading='The Job of a Volunteer'>
@@ -62,10 +65,10 @@ export default function Page() {
                 </Section>
                 <Section heading='Activities'>
                     <Card.Norm header='Day 1: Engineering'>
-                        <p>Engineering Day will kick off the camp with demonstrations over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will then participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
+                        <p>Engineering Day will kick off the camp with demonstrations over a variety of topics important to engineering, such as gravity, structural forces, and aerodynamics. Students will get to work on and participate in egg drop challenges, paper-plane competitions, and several other activities.</p>
                     </Card.Norm>
                     <Card.Norm header='Day 2: Natural Sciences'>
-                        <p>Day Three is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to seeing the water cycle unfold in real-time.</p>
+                        <p>Natural Sciences Day is all about cool at-home science experiements. Students will get to participate in some incredible chemical reactions, such as Elephant's Toothpaste and Coke & Mento fountains! Students will also get to play with Oobleck and build solar ovens, in addition to seeing the water cycle unfold in real-time.</p>
                     </Card.Norm>
                     <Card.Norm header='Day 3: Life Sciences'>
                         <p>A combination of biology, ecosystems, anatomy, and medicine! Students will learn about the anatomy of different organisms and the traits that help them survive in their environment, before creating life-sized diagrams of the human body. Finally, they'll learn about first-aid and how diseases spread through the world.</p>
