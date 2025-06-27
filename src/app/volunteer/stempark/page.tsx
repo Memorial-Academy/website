@@ -78,6 +78,10 @@ export default function Page() {
                         <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:00p.m and ends at 9:00p.m, unlike the other days. Please plan accordingly.</p>
                     </Card.Norm>
                 </Section>
+                <Section heading='Want to earn extra hours?'>
+                    <p><b>New for 2025!</b> We're awarding volunteering hours to volunteers who help us advertise STEMpark. Marketing is a highly important aspect of running a summer camp, however MAST does not have the resources to successfully market it's programs by itselfs. For every three flyers distributed, volunteers are eligible to earn one extra volunteering hours.</p>
+                    <p><a href="https://cloud.memorialacademy.org/s/gmydTmcJZeaRcPL" target='_blank'>Click here to learn more</a> about earning extra hours.</p>
+                </Section>
                 <Section heading="Join today!">
                     {EnrollButton}
                     <p>We're managing signups with <a href="https://my.memorialacademy.org/">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>

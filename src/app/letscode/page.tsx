@@ -22,7 +22,16 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/enroll/81571b2c0c913ac113ee5749" text="Enroll today!" />
+// const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/enroll/81571b2c0c913ac113ee5749" text="Enroll today!" />
+const EnrollButton = <>
+    <p>
+        <b>Signups for Let's Code 2025 are closed!</b>
+        <br/>
+        Thank you to everyone who joined us for an amazing two weeks of coding fun! We're excited for Let's Code to return in 2026!
+        <br/>
+        In the meantime, check out our other summer program <Link href="/stempark">STEMpark</Link>!
+    </p>
+</>
 
 export default function Page() {
     return (
