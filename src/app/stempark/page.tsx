@@ -110,7 +110,7 @@ export default function Page() {
                             <ImageSlideshow images={[
                                 { src: "/stempark_img/space1.jpg" },
                                 { src: "/stempark_img/space2.jpg" },
-                                { src: "/stempark_img/space3.GIF" }
+                                // { src: "/stempark_img/space3.GIF" }
                             ]} />
                         }
                         right={

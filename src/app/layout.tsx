@@ -34,8 +34,8 @@ export default function RootLayout({
             <body>
                 <Nav />
                 <Banner 
-                    message="Ready for SUMMER 2025? Check out our offerings today!" 
-                    link={"/#programs"} 
+                    message="It's not too late! Signup for STEMpark TODAY (it's FREE)!" 
+                    link={"/stempark"} 
                 />
                 {children}
                 <Footer />
