@@ -76,7 +76,7 @@ export default function Page() {
                     </Card.Norm>
                 </Section>
                 <Section heading="The Team">
-                    <BioCards cards={[
+                    <BioCards heading="Board of Directors" cards={[
                         {
                             name: "Griffin Ferguson",
                             title: "Board Member & President, MAST; Program Director, Let's Code & STEMpark",
@@ -109,6 +109,24 @@ export default function Page() {
                             bio: "Jean Hoang is a junior at Stanford University, pursuing computer science and artificial intelligence. Jean was one of the co-founders of Let's Code and is excited to see where the program will go in the future. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop."
                         }
                     ]} />
+                    <BioCards heading='Program Directors' cards={[
+                        {
+                            name: "Eva Brytik",
+                            title: "Program Director, Let's Code Memorial/Spring Branch",
+                            img: "/about/eva.jpg",
+                            bio: "Eva is a high school student interested in computer science and engineering. She has been programming for over four years and joined Let's Code to help make STEM more approachable for younger students. She enjoys working on creative projects like small robotics builds, design experiments, and websites. She has experience with programming in Python, Java, and C++, and has built several tools for her school's computer science club. In her free time, she plays tennis and explores new tech ideas."
+                        }, {
+                            name: "Justin Tai",
+                            title: "Program Director, Let's Code Memorial/Spring Branch",
+                            img: "/about/justin.jpg",
+                            bio: "Justin is a senior at Stratford High School. In addition to participating in the Academy of Science and Engineering, he has leadership positions in Stratford's computer science club and Math Honors Club. He also goes to Family Point Resources every week to volunteer."
+                        }, {
+                            name: "Brenna Laderer",
+                            title: "Program Director, STEMpark Memorial/Spring Branch",
+                            img: "/about/brenna.jpg",
+                            bio: "Brenna Laderer is a rising senior at Stratford High School. She was part of the volunteering team during STEMpark's first camp in 2024 and is excited to continue the program as Program Director. Brenna has long had a passion for the applications of STEM in the real world and for the benefit of humanity, having spent a large amount of her high school career involved in intense medical education in preparation for her planned career in orthopedics. Outside of MAST and school, Brenna is a photographer, member of her school choir and theater, and an accomplished gymnast."
+                        }
+                    ]}/>
                 </Section>
             </main>
         </>
