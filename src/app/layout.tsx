@@ -33,10 +33,6 @@ export default function RootLayout({
         <html lang="en">
             <body>
                 <Nav />
-                <Banner 
-                    message="It's not too late! Signup for STEMpark TODAY (it's FREE)!" 
-                    link={"/stempark"} 
-                />
                 {children}
                 <Footer />
             </body>
