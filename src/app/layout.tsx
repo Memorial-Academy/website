@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Banner from '@/src/components/banner';
+import PlausibleProvider from "next-plausible";
 
 
 export const metadata: Metadata = {
@@ -32,9 +33,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <Nav />
-                {children}
-                <Footer />
+                <PlausibleProvider src={process.env.NEXT_PUBLIC_ANALYTICS}>
+                    <Nav />
+                    {children}
+                    <Footer />
+                </PlausibleProvider>
             </body>
         </html>
     );
