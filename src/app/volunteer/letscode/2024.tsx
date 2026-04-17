@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Card from "@/src/components/card";
-import Enroll from "@/src/components/enroll";
+import Enroll from "@/src/components/big_buttons";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 import BulletList from '@/src/components/list';

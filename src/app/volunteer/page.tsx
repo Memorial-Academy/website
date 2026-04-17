@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Card from "@/src/components/card";
 import {LearnMore} from "@/src/components/card";
-import Enroll from "@/src/components/enroll";
+import { BigButton } from "@/src/components/big_buttons";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 
@@ -36,10 +36,10 @@ export default function Page() {
                     <h3>Learn more about our programs!</h3>
                     <Card.Half 
                         left={
-                            <Enroll link='/volunteer/letscode' text="Volunteer for Let's Code"/>
+                            <BigButton link='/volunteer/letscode' text="Volunteer for Let's Code"/>
                         }
                         right={
-                            <Enroll link="/volunteer/stempark" text='Volunteer for STEMpark' />
+                            <BigButton link="/volunteer/stempark" text='Volunteer for STEMpark' />
                         }
                     />
                 </Section>

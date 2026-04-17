@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Header from "../../components/header";
 import Card from "../../components/card";
 import Section from "../../components/section";
-import Enroll from '../../components/enroll';
+import Enroll from '../../components/big_buttons';
 import BulletList from '@/src/components/list';
 
 export const metadata: Metadata = {

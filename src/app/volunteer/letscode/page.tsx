@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Card from "@/src/components/card";
-import Enroll from "@/src/components/enroll";
+import Enroll from "@/src/components/big_buttons";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 import BulletList from '@/src/components/list';
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
     }
 }
 
-// const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/volunteer/81571b2c0c913ac113ee5749" text="Volunteer for Let's Code!" />
-const EnrollButton = <>
-    <p>
-        <b>Signups for Let's Code 2025 are closed!</b>
-        <br/>
-        Thank you to everyone who helped make Let's Code so amazing! We're excited for Let's Code to return in 2026! Volunteering hours have been published in MyMAST.
-        <br/>
-        In the meantime, check out our other summer program <Link href="/volunteer/stempark">STEMpark</Link>!
-    </p>
-</>
+const EnrollButton = <Enroll programID='37c1b1badbf31163ae129edf' signupType='volunteer' text="Volunteer at Let's Code!" />
+// const EnrollButton = <>
+//     <p>
+//         <b>Signups for Let's Code 2025 are closed!</b>
+//         <br/>
+//         Thank you to everyone who helped make Let's Code so amazing! We're excited for Let's Code to return in 2026! Volunteering hours have been published in MyMAST.
+//         <br/>
+//         In the meantime, check out our other summer program <Link href="/volunteer/stempark">STEMpark</Link>!
+//     </p>
+// </>
 
 export default function Page() {
     return (

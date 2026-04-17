@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Header from "../../components/header";
 import Card from "../../components/card";
 import Section from "../../components/section";
-import Enroll from '../../components/enroll';
+import Enroll from '../../components/big_buttons';
 import BulletList from '@/src/components/list';
 import Link from 'next/link';
 
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
     }
 }
 
-// const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/enroll/81571b2c0c913ac113ee5749" text="Enroll today!" />
-const EnrollButton = <>
-    <p>
-        <b>Signups for Let's Code 2025 are closed!</b>
-        <br/>
-        Thank you to everyone who joined us for an amazing two weeks of coding fun! We're excited for Let's Code to return in 2026!
-        <br/>
-        In the meantime, check out our other summer program <Link href="/stempark">STEMpark</Link>!
-    </p>
-</>
+const EnrollButton = <Enroll text="Enroll today!" signupType="enroll" programID="37c1b1badbf31163ae129edf" />
+// const EnrollButton = <>
+//     <p>
+//         <b>Signups for Let's Code 2025 are closed!</b>
+//         <br/>
+//         Thank you to everyone who joined us for an amazing two weeks of coding fun! We're excited for Let's Code to return in 2026!
+//         <br/>
+//         In the meantime, check out our other summer program <Link href="/stempark">STEMpark</Link>!
+//     </p>
+// </>
 
 export default function Page() {
     return (
@@ -48,8 +48,8 @@ export default function Page() {
                         <li>
                             <b>Dates:</b>
                             <ul>
-                                <li>Week 1: June 9 - 13</li>
-                                <li>Week 2: June 16 - 19</li>
+                                <li>Week 1: June 8 - 12</li>
+                                <li>Week 2: June 15 - 19</li>
                             </ul>
                         </li>
                         <li>
@@ -67,7 +67,7 @@ export default function Page() {
                 <Section heading='Classes'>
                     <p>Our introductory classes are one-week long classes that introduce students to the basics of computer science and programming. They're perfect for absolute beginners, student coders looking to refine their skills, and all other students ready to become a computer scientist!</p>
                     <p>
-                        <b>New for 2025: brand new curriculums!</b>&nbsp;
+                        <b>New from 2025: brand new curriculums!</b>&nbsp;
                         We've redesigned all of our introductory curriculums to provide the most comprehensive and high-quality learning experience possible.
                         Whether you're a new student or a returning student, we've got new and exciting things to share with you!
                     </p>

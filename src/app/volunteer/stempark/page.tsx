@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Card from "@/src/components/card";
-import Enroll from "@/src/components/enroll";
+import Enroll from "@/src/components/big_buttons";
 import Header from "@/src/components/header";
 import Section from "@/src/components/section";
 import Link from 'next/link';
@@ -21,7 +21,9 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll link="https://my.memorialacademy.org/programs/volunteer/40e41e46d3116e536ed595b1" text="Volunteer at STEMpark" />
+// const EnrollButton = <Enroll programID='37c1b1badbf31163ae129edf' signupType='volunteer' text="Volunteer at STEMpark" />
+const EnrollButton = <></>
+
 
 export default function Page() {
     return (
@@ -36,22 +38,23 @@ export default function Page() {
             <main>
                 <Section heading="Volunteer for STEMpark!">
                     <Card.Left image='/stempark.svg' header="Details">
-                    <ul>
-                        <li><b>Dates:</b> July 7 - 10</li>
-                        <li>
-                            <b>Times:</b>
-                            <ul>
-                                <li>July 7 - 9: 11:30a.m - 2:30p.m</li>
-                                <li>July 10: 6:00p.m - 9:00p.m</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <b>Location:</b> Bendwood Elementary Playground (12750 Kimberley Ln, Houston, TX 77024)
-                            <br/>
-                            (next to Bendwood Park)
-                        </li>
-                        <li><b>Limited spots available!</b></li>
-                    </ul>
+                        {/* <ul>
+                            <li><b>Dates:</b> July 7 - 10</li>
+                            <li>
+                                <b>Times:</b>
+                                <ul>
+                                    <li>July 7 - 9: 11:30a.m - 2:30p.m</li>
+                                    <li>July 10: 6:00p.m - 9:00p.m</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Location:</b> Bendwood Elementary Playground (12750 Kimberley Ln, Houston, TX 77024)
+                                <br/>
+                                (next to Bendwood Park)
+                            </li>
+                            <li><b>Limited spots available!</b></li>
+                        </ul> */}
+                        <p><b>Information for STEMpark 2026 is coming soon!</b></p>
                     </Card.Left>
                     <p>
                         Do you love STEM? Then STEMpark may be the perfect volunteering opportunity for you! As a volunteer, you'll get to help students complete experiements and build fun projects, help them understand new and interesting concepts, and serve as a guide for students as they expand their knowledge, problem-solving ability, and creative skills. 
@@ -78,10 +81,10 @@ export default function Page() {
                         <p><b>Note: </b> to facilitate the best star-gazing experience, this day of STEMpark begins at 6:00p.m and ends at 9:00p.m, unlike the other days. Please plan accordingly.</p>
                     </Card.Norm>
                 </Section>
-                <Section heading='Want to earn extra hours?'>
+                {/* <Section heading='Want to earn extra hours?'>
                     <p><b>New for 2025!</b> We're awarding volunteering hours to volunteers who help us advertise STEMpark. Marketing is a highly important aspect of running a summer camp, however MAST does not have the resources to successfully market it's programs by itselfs. For every three flyers distributed, volunteers are eligible to earn one extra volunteering hours.</p>
                     <p><a href="https://cloud.memorialacademy.org/s/gmydTmcJZeaRcPL" target='_blank'>Click here to learn more</a> about earning extra hours.</p>
-                </Section>
+                </Section> */}
                 <Section heading="Join today!">
                     {EnrollButton}
                     <p>We're managing signups with <a href="https://my.memorialacademy.org/">MyMAST</a> this year. <Link href="/about/mymast">Learn more.</Link></p>

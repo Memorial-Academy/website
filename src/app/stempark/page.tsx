@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Header from "../../components/header";
 import Card from '../../components/card';
-import Enroll from '../../components/enroll';
+import Enroll from '../../components/big_buttons';
 import Section from '../../components/section';
 import ImageSlideshow from '@/src/components/image_slideshow';
 import Link from 'next/link';
@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     }
 }
 
-const EnrollButton = <Enroll text="Enroll today!" link="https://my.memorialacademy.org/programs/enroll/40e41e46d3116e536ed595b1" />
+// const EnrollButton = <Enroll text="Enroll today!" signupType="enroll" programID="40e41e46d3116e536ed595b1" />
+const EnrollButton = <></>
 
 export default function Page() {
     return (
@@ -35,7 +36,7 @@ export default function Page() {
             />
             <main>
                 <Card.Left image="/stempark.svg || STEMpark logo" header="Details">
-                    <ul>
+                    {/* <ul>
                         <li><b>Dates:</b> July 7 - 10</li>
                         <li>
                             <b>Times:</b>
@@ -51,7 +52,8 @@ export default function Page() {
                         </li>
                         <li><b>Cost:</b> Free</li>
                         <li>Parents and unenrolled students are welcome to watch demonstrations!</li>
-                    </ul>
+                    </ul> */}
+                    <p><b>Information for STEMpark 2026 is coming soon!</b></p>
                 </Card.Left>
                 <Section heading="Explore STEM the fun way!">
                     <p>The best way to learn about STEM is in the real world. STEMpark uses fun, hands-on experiements to introduce kids to the different STEM concepts that make up our daily lives, all while getting them out of the classroom and into the outdoors. This week of fun, action-packed experiments and demonstrations is designed specifically to let students gain an understanding of complex topics by building, breaking, and having that "whoa" moment!</p>

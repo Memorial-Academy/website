@@ -2,11 +2,13 @@ import Card from "../components/card";
 import { LearnMore } from "../components/card";
 import Header from "../components/header";
 import Section from "../components/section";
+import Banner from "../components/banner";
 
 export default function Home() {
     return (
         <>
-            {/* <Banner message={"Support the future of high-quality summer camps; donate today!"} link="/donate" /> */}
+            <Banner message={"ENROLL TODAY! Enrollment is now open for Let's Code 2026"} link="/letscode?utm_source=mast_website&utm_campaign=banner" />
+            {/* <Banner message={"Support the future of high-quality summer camps; donate today!"} link="/donate?utm_source=mast_website&utm_campaign=banner" /> */}
             <Header
                 title="Boost your child's learning!"
                 tagline="STEM and computer science summer programs for elementary & middle school students, designed to guide kids into real-world tools and skills."
