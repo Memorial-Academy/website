@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     }
 }
 
-const IntroEnrollButton = <Enroll text="Enroll in Introductory Classes" link="https://cloud.memorialacademy.org/apps/forms/s/SBXyemr9kjGEtg7WLBwtF8aj" />
-const AdvEnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
+// const IntroEnrollButton = <Enroll text="Enroll in Introductory Classes" link="https://cloud.memorialacademy.org/apps/forms/s/SBXyemr9kjGEtg7WLBwtF8aj" />
+// const AdvEnrollButton = <Enroll text="Enroll in Advanced Classes" link="https://cloud.memorialacademy.org/apps/forms/s/cksH6pJt69P2SAaG55GJJXPm" />
 
 export default function Page() {
     return (
